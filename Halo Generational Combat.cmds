@@ -1,0 +1,132 @@
+"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps\tags.dat"
+
+# echo ==Set Variables...==
+SetVariable workingdir "C:\Users\zekken\Desktop\Halo-Generational-Combat"
+SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
+SetVariable workshop "F:\SteamLibrary\steamapps\workshop\content\976730\2962955878"
+
+# echo ==Set Caches...==
+UseAudioCache "workingdir\caches\audiocache"
+UseShaderCache "workingdir\caches\shadercache"
+
+# echo ==Creating Mod Package...==
+CreateModPackage 1 large
+Halo Generational Combat
+This is a mod that ports all of Halo: Combat Evolved into Halo 3, with the goal of keeping true to the original as much as possible whilst updating visuals & gameplay mechanics to fit a perfect balance between old and new, such as CE vehicles being able to be destroyed & having damage states, and modified halo 3 equipment thrown into the Halo: Combat Evolved sandbox.
+Drksteel, Zekken
+0.1
+Multiplayer Character
+
+RunCommands workingdir\preport.cmds
+
+# echo ==Porting...==
+
+OpenCacheFile "workingdir\maps\beavercreek.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\bloodgulch.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\boardingaction.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\chillout.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\damnation.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\danger_canyon.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\death_island.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\derelict.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\extinction.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\gephyrophobia.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\hangemhigh.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\icefields.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\infinity.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\longest.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\prisoner.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\putput.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\ratrace.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\sidewinder.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\timberland.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\tutorial.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\wizard.map"
+PortTag *.scnr
+Exit
+
+OpenCacheFile "workingdir\maps\yoyoisland.map"
+PortTag *.scnr
+Exit
+
+# echo ==Hud...==
+edittag objects\characters\elite\mp_elite\mp_elite.biped
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+savetagchanges
+Exit
+
+edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+savetagchanges
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+Exit
+
+RunCommands workingdir\weaponglobals.cmds
+
+UpdateMapFiles "workshop" ForceUpdate
+
+AddModFiles workingdir\assets
+
+SaveModPackage
+
+DumpLog "workingdir\logs"

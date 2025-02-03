@@ -1,0 +1,33 @@
+# echo ==Pre Porting...==
+
+# Fix Scorpion
+edittag objects\vehicles\scorpion\scorpion.model
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\scorpion.collision_model
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\scorpion.physics_model
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\scorpion.model_animation_graph
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\turrets\cannon\cannon.model
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\turrets\cannon\cannon.collision_model
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\turrets\cannon\cannon.physics_model
+savetagchanges
+exit
+edittag objects\vehicles\scorpion\turrets\cannon\cannon.model_animation_graph
+savetagchanges
+exit
+nametag objects\vehicles\scorpion\scorpion.collision_model objects\vehicles\reach_scorpion\reach_scorpion
+nametag objects\vehicles\scorpion\scorpion.physics_model objects\vehicles\reach_scorpion\reach_scorpion
+nametag objects\vehicles\scorpion\scorpion.model_animation_graph objects\vehicles\reach_scorpion\reach_scorpion
+nametag objects\vehicles\scorpion\turrets\cannon\cannon.collision_model objects\vehicles\scorpion\turrets\reach_cannon\reach_cannon
+nametag objects\vehicles\scorpion\turrets\cannon\cannon.physics_model objects\vehicles\scorpion\turrets\reach_cannon\reach_cannon
+nametag objects\vehicles\scorpion\turrets\cannon\cannon.model_animation_graph objects\vehicles\scorpion\turrets\reach_cannon\reach_cannon

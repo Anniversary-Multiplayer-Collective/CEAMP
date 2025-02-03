@@ -1,0 +1,971 @@
+# echo ==Weapons...==
+
+stringid add HCE_AR
+stringid add HCE_AR_GOLD
+stringid add HCE_MAGNUM
+stringid add HCE_MAGNUM_GOLD
+stringid add HCE_PP
+stringid add HCE_PR
+stringid add HCE_BRUTE_PR
+stringid add HCE_NEEDLER
+stringid add HCE_SHOTTY
+stringid add HCE_SHOTTY_GOLD
+stringid add H2_BR
+stringid add HCE_SNIPER
+stringid add HCE_SWORD
+stringid add HCE_FLAMER
+stringid add HUNTER_CANNON
+stringid add FUEL_ROD_GUN
+stringid add WARTHOG_TURRET
+stringid add WARTHOG_ROCKET_TURRET
+stringid add HCE_ROCKETLAUNCHER
+
+# echo ==CE Assualt Rifle...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_AR
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_AR
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_AR
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_AR "CE Assualt Rifle"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR
+SetField TextValuePairs[*].Name HCE_AR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR
+SetField TextValuePairs[*].Name HCE_AR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR
+SetField TextValuePairs[*].Name HCE_AR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR
+SetField TextValuePairs[*].Name HCE_AR
+SaveTagChanges
+Exit
+
+# echo ==Gold CE Assualt Rifle...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_AR_GOLD
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_AR_GOLD
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_AR_GOLD
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_AR_GOLD "Gold CE Assualt Rifle"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR_GOLD
+SetField TextValuePairs[*].Name HCE_AR_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR_GOLD
+SetField TextValuePairs[*].Name HCE_AR_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR_GOLD
+SetField TextValuePairs[*].Name HCE_AR_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_AR_GOLD
+SetField TextValuePairs[*].Name HCE_AR_GOLD
+SaveTagChanges
+Exit
+
+# echo ==CE Magnum...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_MAGNUM
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_MAGNUM
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_MAGNUM
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_MAGNUM "CE Magnum"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM
+SetField TextValuePairs[*].Name HCE_MAGNUM
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM
+SetField TextValuePairs[*].Name HCE_MAGNUM
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM
+SetField TextValuePairs[*].Name HCE_MAGNUM
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM
+SetField TextValuePairs[*].Name HCE_MAGNUM
+SaveTagChanges
+Exit
+
+# echo ==Gold CE Magnum...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_MAGNUM_GOLD
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_MAGNUM_GOLD
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_MAGNUM_GOLD
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_MAGNUM_GOLD "Gold CE Magnum"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM_GOLD
+SetField TextValuePairs[*].Name HCE_MAGNUM_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM_GOLD
+SetField TextValuePairs[*].Name HCE_MAGNUM_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM_GOLD
+SetField TextValuePairs[*].Name HCE_MAGNUM_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_MAGNUM_GOLD
+SetField TextValuePairs[*].Name HCE_MAGNUM_GOLD
+SaveTagChanges
+Exit
+
+# echo ==CE Plasma Pistol...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_PP
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_pp\hce_pp.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_PP
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_PP
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_PP "CE Plasma Pistol"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PP
+SetField TextValuePairs[*].Name HCE_PP
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PP
+SetField TextValuePairs[*].Name HCE_PP
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PP
+SetField TextValuePairs[*].Name HCE_PP
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PP
+SetField TextValuePairs[*].Name HCE_PP
+SaveTagChanges
+Exit
+
+# echo ==CE Plasma Rifle...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_PR
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_pr\hce_pr.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_PR
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_PR
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_PR "CE Plasma Rifle"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PR
+SetField TextValuePairs[*].Name HCE_PR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PR
+SetField TextValuePairs[*].Name HCE_PR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PR
+SetField TextValuePairs[*].Name HCE_PR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_PR
+SetField TextValuePairs[*].Name HCE_PR
+SaveTagChanges
+Exit
+
+# echo ==CE Brute Plasma Rifle...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_BRUTE_PR
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_plasma_rifle\brute_variant\brute_hce_pr.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_BRUTE_PR
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_BRUTE_PR
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_BRUTE_PR "CE Brute Plasma Rifle"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_BRUTE_PR
+SetField TextValuePairs[*].Name HCE_BRUTE_PR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_BRUTE_PR
+SetField TextValuePairs[*].Name HCE_BRUTE_PR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_BRUTE_PR
+SetField TextValuePairs[*].Name HCE_BRUTE_PR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_BRUTE_PR
+SetField TextValuePairs[*].Name HCE_BRUTE_PR
+SaveTagChanges
+Exit
+
+# echo ==CE Needler...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_NEEDLER
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_needler\hce_needler.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_NEEDLER
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_NEEDLER
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_NEEDLER "CE Needler"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_NEEDLER
+SetField TextValuePairs[*].Name HCE_NEEDLER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_NEEDLER
+SetField TextValuePairs[*].Name HCE_NEEDLER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_NEEDLER
+SetField TextValuePairs[*].Name HCE_NEEDLER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_NEEDLER
+SetField TextValuePairs[*].Name HCE_NEEDLER
+SaveTagChanges
+Exit
+
+# echo ==CE Shotgun...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_SHOTTY
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_shotty\hce_shotgun.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_SHOTTY
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_SHOTTY
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_SHOTTY "CE Shotgun"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY
+SetField TextValuePairs[*].Name HCE_SHOTTY
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY
+SetField TextValuePairs[*].Name HCE_SHOTTY
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY
+SetField TextValuePairs[*].Name HCE_SHOTTY
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY
+SetField TextValuePairs[*].Name HCE_SHOTTY
+SaveTagChanges
+Exit
+
+# echo ==Gold CE Shotgun...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_SHOTTY_GOLD
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_shotgun\gold_variant\shotgun_gold.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_SHOTTY_GOLD
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_SHOTTY_GOLD
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_SHOTTY_GOLD "Gold CE Shotgun"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY_GOLD
+SetField TextValuePairs[*].Name HCE_SHOTTY_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY_GOLD
+SetField TextValuePairs[*].Name HCE_SHOTTY_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY_GOLD
+SetField TextValuePairs[*].Name HCE_SHOTTY_GOLD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SHOTTY_GOLD
+SetField TextValuePairs[*].Name HCE_SHOTTY_GOLD
+SaveTagChanges
+Exit
+
+# echo ==H2 Battle Rifle...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name H2_BR
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon H2_BR
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon H2_BR
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english H2_BR "H2 Battle Rifle"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue H2_BR
+SetField TextValuePairs[*].Name H2_BR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue H2_BR
+SetField TextValuePairs[*].Name H2_BR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue H2_BR
+SetField TextValuePairs[*].Name H2_BR
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue H2_BR
+SetField TextValuePairs[*].Name H2_BR
+SaveTagChanges
+Exit
+
+# echo ==CE Sniper Rifle...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_SNIPER
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_sniper\hce_sniper.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_SNIPER
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_SNIPER
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_SNIPER "CE Sniper Rifle"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SNIPER
+SetField TextValuePairs[*].Name HCE_SNIPER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SNIPER
+SetField TextValuePairs[*].Name HCE_SNIPER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SNIPER
+SetField TextValuePairs[*].Name HCE_SNIPER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SNIPER
+SetField TextValuePairs[*].Name HCE_SNIPER
+SaveTagChanges
+Exit
+
+# echo ==CE Sword...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_SWORD
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_sword\hce_sword.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_SWORD
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_SWORD
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_SWORD "CE Sword"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SWORD
+SetField TextValuePairs[*].Name HCE_SWORD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SWORD
+SetField TextValuePairs[*].Name HCE_SWORD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SWORD
+SetField TextValuePairs[*].Name HCE_SWORD
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_SWORD
+SetField TextValuePairs[*].Name HCE_SWORD
+SaveTagChanges
+Exit
+
+# echo ==CE Flame Thrower...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_FLAMER
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_FLAMER
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_FLAMER
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_FLAMER "CE Flame Thrower"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_FLAMER
+SetField TextValuePairs[*].Name HCE_FLAMER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_FLAMER
+SetField TextValuePairs[*].Name HCE_FLAMER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_FLAMER
+SetField TextValuePairs[*].Name HCE_FLAMER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_FLAMER
+SetField TextValuePairs[*].Name HCE_FLAMER
+SaveTagChanges
+Exit
+
+# echo ==Hunter Cannon...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HUNTER_CANNON
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon objects\characters\hunter\hunter_particle_cannon\hunter_particle_cannon.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HUNTER_CANNON
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HUNTER_CANNON
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HUNTER_CANNON "Hunter Cannon"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HUNTER_CANNON
+SetField TextValuePairs[*].Name HUNTER_CANNON
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HUNTER_CANNON
+SetField TextValuePairs[*].Name HUNTER_CANNON
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HUNTER_CANNON
+SetField TextValuePairs[*].Name HUNTER_CANNON
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HUNTER_CANNON
+SetField TextValuePairs[*].Name HUNTER_CANNON
+SaveTagChanges
+Exit
+
+# echo ==CE Fuel Rod Gun...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name FUEL_ROD_GUN
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon FUEL_ROD_GUN
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon FUEL_ROD_GUN
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english FUEL_ROD_GUN "CE Fuel Rod Gun"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue FUEL_ROD_GUN
+SetField TextValuePairs[*].Name FUEL_ROD_GUN
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue FUEL_ROD_GUN
+SetField TextValuePairs[*].Name FUEL_ROD_GUN
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue FUEL_ROD_GUN
+SetField TextValuePairs[*].Name FUEL_ROD_GUN
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue FUEL_ROD_GUN
+SetField TextValuePairs[*].Name FUEL_ROD_GUN
+SaveTagChanges
+Exit
+
+# echo ==Warthog Turret...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name WARTHOG_TURRET
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\vehicles\tgof_hce_warthog\turret\turret_weapon\turret_weapon.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon WARTHOG_TURRET
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon WARTHOG_TURRET
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english WARTHOG_TURRET "Warthog Turret"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_TURRET
+SetField TextValuePairs[*].Name WARTHOG_TURRET
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_TURRET
+SetField TextValuePairs[*].Name WARTHOG_TURRET
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_TURRET
+SetField TextValuePairs[*].Name WARTHOG_TURRET
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_TURRET
+SetField TextValuePairs[*].Name WARTHOG_TURRET
+SaveTagChanges
+Exit
+
+# echo ==Warthog Rocket Turret...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name WARTHOG_ROCKET_TURRET
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\vehicles\tgof_hce_new_rwarthog\r_turret\rturret_weapon\rturret_weapon.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon WARTHOG_ROCKET_TURRET
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon WARTHOG_ROCKET_TURRET
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english WARTHOG_ROCKET_TURRET "Warthog Rocket Turret"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_ROCKET_TURRET
+SetField TextValuePairs[*].Name WARTHOG_ROCKET_TURRET
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_ROCKET_TURRET
+SetField TextValuePairs[*].Name WARTHOG_ROCKET_TURRET
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_ROCKET_TURRET
+SetField TextValuePairs[*].Name WARTHOG_ROCKET_TURRET
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue WARTHOG_ROCKET_TURRET
+SetField TextValuePairs[*].Name WARTHOG_ROCKET_TURRET
+SaveTagChanges
+Exit
+
+# echo ==HCE Rocket Launcher...==
+
+EditTag multiplayer\multiplayer_globals.mulg
+AddBlockElements Universal[0].GameVariantWeapons
+SetField Universal[0].GameVariantWeapons[*].Name HCE_ROCKETLAUNCHER
+SetField Universal[0].GameVariantWeapons[*].RandomChance 0.5
+SetField Universal[0].GameVariantWeapons[*].Weapon custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon
+AddBlockElements Universal[0].WeaponSets[0].Substitutions
+SetField Universal[0].WeaponSets[0].Substitutions[*].OriginalWeapon HCE_ROCKETLAUNCHER
+SetField Universal[0].WeaponSets[0].Substitutions[*].SubstitutedWeapon HCE_ROCKETLAUNCHER
+SaveTagChanges
+Exit
+
+EditTag ui\halox\game_options\strings.unic
+SetString english HCE_ROCKETLAUNCHER "HCE Rocket Launcher"
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_primary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_ROCKETLAUNCHER
+SetField TextValuePairs[*].Name HCE_ROCKETLAUNCHER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\map_overrides\traits_weapons_initial_secondary_untemplated.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_ROCKETLAUNCHER
+SetField TextValuePairs[*].Name HCE_ROCKETLAUNCHER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_primary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_ROCKETLAUNCHER
+SetField TextValuePairs[*].Name HCE_ROCKETLAUNCHER
+SaveTagChanges
+Exit
+
+EditTag multiplayer\game_variant_settings\player_traits_template\traits_weapons_initial_secondary.sily
+AddBlockElements TextValuePairs
+SetField TextValuePairs[*].ExpectedValueType StringidReference
+SetField TextValuePairs[*].StringidValue HCE_ROCKETLAUNCHER
+SetField TextValuePairs[*].Name HCE_ROCKETLAUNCHER
+SaveTagChanges
+Exit
