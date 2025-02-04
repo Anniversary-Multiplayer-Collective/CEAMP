@@ -1,0 +1,78 @@
+"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps\tags.dat"
+
+# echo ==Set Variables...==
+SetVariable workingdir "C:\Users\zekken\Desktop\Halo-Generational-Combat"
+SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
+
+# echo ==Set Caches...==
+UseAudioCache "workingdir\caches\audiocache"
+UseShaderCache "workingdir\caches\shadercache"
+
+# echo ==Creating Mod Package...==
+CreateModPackage 1 large
+Halo CE Main Menu
+The Halo CE Main Menu, Thanks Kashiiera for their tags.
+Zekken
+0.1
+Character MainMenu
+
+# echo ==Porting...==
+
+edittag levels\ui\mainmenu\mainmenu.scenario
+setfield MapId 694207
+setfield MapType SinglePlayer
+savetagchanges
+Exit
+
+NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ed
+NameTag levels\ui\mainmenu\sky\sky.render_model levels\ui\mainmenu\sky\sky_ed
+
+OpenCacheFile "workingdir\maps\mainmenu.map"
+PortTag *.scnr
+PortTag kashiiera\ui\main_menu\bitmaps\halo_logo.bitm
+PortTag kashiiera\sounds\ui\main_menu_music.lsnd
+Exit
+
+EditTag ui\halox\main_menu\main_menu.gui_screen_widget_definition
+RemoveBlockElements GroupWidgets[1].Definition.BitmapWidgets 1 1
+RemoveBlockElements GroupWidgets[0].Definition.TextWidgets 1 1
+# RemoveBlockElements GroupWidgets[0].Definition.BitmapWidgets 1 3
+RemoveBlockElements GroupWidgets[0].Definition.BitmapWidgets 0 *
+SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.Bitmap kashiiera\ui\main_menu\bitmaps\halo_logo.bitm
+# SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.Bitmap ui\halox\battlefront_main_menu\bf_mainmenu.bitmap
+setfield GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 50 400 325 1150
+SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 100 475 275 1075
+# SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 355 545 649 950
+# SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 355 545 649 950
+SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds720p 400 555 0 0
+SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds480i 400 555 0 0
+SaveTagChanges
+Exit
+
+# CENTER JUSTIFY TEXT
+edittag ui\halox\main_menu\main_menu_list.gui_skin_definition
+setfield TextWidgets[0].Definition.Flags DoNotApplyOldContentUpscaling,StringFromExportedStringId,NoDropShadow,AllowListItemToOverrideAnimationSkin
+setfield TextWidgets[0].Definition.GuiRenderBlock.Bounds720p 2 0 45 378
+SaveTagChanges
+Exit
+
+#MM Music
+EditTag ui\ui_shared_globals.user_interface_shared_globals_definition
+setfield MainMenuMusic kashiiera\sounds\ui\main_menu_music.lsnd
+SaveTagChanges
+Exit
+
+EditTag kashiiera\objects\gear\forerunner\halo\bitmaps\outer_ring_zbump.bitmap
+ImportBitmap 0 workingdir\bitmaps\outer_ring_zbump2.dds
+SaveTagChanges
+Exit
+
+edittag kashiiera\objects\gear\forerunner\halo\shaders\outer_ring.shader
+setargument specular_coefficient 0.1
+SaveTagChanges
+Exit
+
+updatemapfiles
+
+SaveModPackage
+
