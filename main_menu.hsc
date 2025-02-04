@@ -1,11 +1,7 @@
-; Globals
 (global short ui_location -1)
 (global short currentCharacter -1)
 (global boolean never_end false)
 
-; Externs
-
-; Scripts
 (script startup void mainmenu
 	(print "mainmenu startup script")
 	(set currentCharacter (ui_get_player_model_id))
@@ -26,11 +22,6 @@
 	(if (!= ui_location 1)
 		(sleep_forever settings_cam)
 	)
-)
-
-(script static void (set_ui_location (short location))
-	(set ui_location location)
-	(sleep 1)
 )
 
 (script static void ring_loop
@@ -68,8 +59,8 @@
 (script dormant void appearance_characters
 	(print "appearance characters [dormant script]")
 	(sleep 1)
-	(objects_attach "spartan_appearance" "right_hand" "appearance_ar" "invalid")
-	(objects_attach "elite_appearance" "right_hand_elite" "appearance_pr" "invalid")
+	(objects_attach "spartan_appearance" "right_hand" "appearance_ar" "")
+	(objects_attach "elite_appearance" "right_hand_elite" "appearance_pr" "")
 	(custom_animation_loop "spartan_appearance" "objects\characters\masterchief\masterchief" "ui:rifle:idle:var1" false)
 	(custom_animation_loop "elite_appearance" "objects\characters\dervish\dervish" "ui:pistol:idle:var1" false)
 	(object_hide "spartan_appearance" true)
@@ -78,7 +69,7 @@
 
 (script static void settings_cam
 	(print "settings cam")
-	(set_ui_location 1)
+	(set ui_location 1)
 	(kill_camera_scripts)
 	(render_depth_of_field_enable false)
 	(object_hide "elite_appearance" false)
@@ -90,6 +81,7 @@
 	(print "leave settings")
 	(object_hide "spartan_appearance" true)
 	(object_hide "elite_appearance" true)
+	(camera_set "point_1" -1)
 	(ring_loop)
 )
 
