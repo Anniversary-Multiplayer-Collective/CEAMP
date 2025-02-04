@@ -1,0 +1,184 @@
+edittag levels\ui\mainmenu\mainmenu.scenario
+setfield MapId 694207
+setfield MapType SinglePlayer
+savetagchanges
+Exit
+
+NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ed
+NameTag levels\ui\mainmenu\sky\sky.render_model levels\ui\mainmenu\sky\sky_ed
+
+OpenCacheFile "workingdir\maps\mainmenu.map"
+PortTag *.scnr
+PortTag kashiiera\ui\main_menu\bitmaps\halo_logo.bitm
+PortTag kashiiera\sounds\ui\main_menu_music.lsnd
+Exit
+
+EditTag ui\halox\main_menu\main_menu.gui_screen_widget_definition
+RemoveBlockElements GroupWidgets[1].Definition.BitmapWidgets 1 1
+RemoveBlockElements GroupWidgets[0].Definition.TextWidgets 1 1
+# RemoveBlockElements GroupWidgets[0].Definition.BitmapWidgets 1 3
+RemoveBlockElements GroupWidgets[0].Definition.BitmapWidgets 0 *
+SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.Bitmap kashiiera\ui\main_menu\bitmaps\halo_logo.bitm
+# SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.Bitmap ui\halox\battlefront_main_menu\bf_mainmenu.bitmap
+setfield GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 50 400 325 1150
+SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 100 475 275 1075
+# SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 355 545 649 950
+# SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 355 545 649 950
+SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds720p 400 555 0 0
+SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds480i 400 555 0 0
+SaveTagChanges
+Exit
+
+# CENTER JUSTIFY TEXT
+edittag ui\halox\main_menu\main_menu_list.gui_skin_definition
+setfield TextWidgets[0].Definition.Flags DoNotApplyOldContentUpscaling,StringFromExportedStringId,NoDropShadow,AllowListItemToOverrideAnimationSkin
+setfield TextWidgets[0].Definition.GuiRenderBlock.Bounds720p 2 0 45 378
+SaveTagChanges
+Exit
+
+#MM Music
+EditTag ui\ui_shared_globals.user_interface_shared_globals_definition
+setfield MainMenuMusic kashiiera\sounds\ui\main_menu_music.lsnd
+SaveTagChanges
+Exit
+
+EditTag kashiiera\objects\gear\forerunner\halo\bitmaps\outer_ring_zbump.bitmap
+ImportBitmap 0 workingdir\bitmaps\outer_ring_zbump2.dds
+SaveTagChanges
+Exit
+
+edittag kashiiera\objects\gear\forerunner\halo\shaders\outer_ring.shader
+setargument specular_coefficient 0.1
+SaveTagChanges
+Exit
+
+ForEach scn3 SetField OnLoadScriptName null
+ForEach scn3 SetField ScriptIndex -1
+
+edittag levels\ui\mainmenu\mainmenu.scenario
+
+addblockelements CutsceneCameraPoints
+setfield CutsceneCameraPoints[*].Name "settings_cam"
+setfield CutsceneCameraPoints[*].Position 2.69 2.27 6.88
+setfield CutsceneCameraPoints[*].Orientation -147.07 -9.46 -6.07
+
+addblockelements ObjectNames
+setfield ObjectNames[*].Name "spartan_appearance"
+setfield ObjectNames[*].PlacementIndex 0
+
+addblockelements ObjectNames
+setfield ObjectNames[*].Name "elite_appearance"
+setfield ObjectNames[*].PlacementIndex 1
+
+addblockelements ObjectNames
+setfield ObjectNames[*].Name "appearance_ar"
+setfield ObjectNames[*].ObjectType.Halo3ODST Weapon
+setfield ObjectNames[*].PlacementIndex 0
+
+addblockelements ObjectNames
+setfield ObjectNames[*].Name "appearance_pr"
+setfield ObjectNames[*].ObjectType.Halo3ODST Weapon
+setfield ObjectNames[*].PlacementIndex 1
+
+addblockelements BipedPalette
+setfield BipedPalette[*].Object objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+
+addblockelements BipedPalette
+setfield BipedPalette[*].Object objects\characters\elite\mp_elite\mp_elite.biped
+
+addblockelements WeaponPalette
+setfield WeaponPalette[*].Object levels\ui\mainmenu\objects\assault_rifle_cheap\assault_rifle_cheap.weapon
+
+addblockelements WeaponPalette
+setfield WeaponPalette[*].Object levels\ui\mainmenu\objects\plasma_rifle_cheap\plasma_rifle_cheap.weapon
+
+addblockelements Bipeds
+setfield Bipeds[*].PaletteIndex 0
+setfield Bipeds[*].NameIndex 1
+setfield Bipeds[*].Position 1 0 0
+setfield Bipeds[*].Rotation 1 0 0
+setfield Bipeds[*].OriginBspIndex -1
+setfield Bipeds[*].Source Editor
+setfield Bipeds[*].EditingBoundToBsp -1
+setfield Bipeds[*].EditorFolder -1
+setfield Bipeds[*].ParentId.NameIndex -1
+setfield Bipeds[*].CanAttachToBspFlags 1
+
+addblockelements Bipeds
+setfield Bipeds[*].PaletteIndex 1
+setfield Bipeds[*].NameIndex 2
+setfield Bipeds[*].Position 1 0 0
+setfield Bipeds[*].Rotation 1 0 0
+setfield Bipeds[*].OriginBspIndex -1
+setfield Bipeds[*].Source Editor
+setfield Bipeds[*].EditingBoundToBsp -1
+setfield Bipeds[*].EditorFolder -1
+setfield Bipeds[*].ParentId.NameIndex -1
+setfield Bipeds[*].CanAttachToBspFlags 1
+
+addblockelements Weapons
+setfield Weapons[*].PaletteIndex 0
+setfield Weapons[*].NameIndex 3
+setfield Weapons[*].Position 1 0 0
+setfield Weapons[*].Rotation 1 0 0
+setfield Weapons[*].OriginBspIndex -1
+setfield Weapons[*].ObjectType.Halo3ODST Weapon
+setfield Weapons[*].Source Editor
+setfield Weapons[*].EditingBoundToBsp -1
+setfield Weapons[*].EditorFolder -1
+setfield Weapons[*].ParentId.NameIndex -1
+setfield Weapons[*].CanAttachToBspFlags 1
+setfield Weapons[*].Multiplayer.Team Neutral
+setfield Weapons[*].Multiplayer.MapVariantParent.NameIndex -1
+
+addblockelements Weapons
+setfield Weapons[*].PaletteIndex 1
+setfield Weapons[*].NameIndex 4
+setfield Weapons[*].Position 1 0 0
+setfield Weapons[*].Rotation 1 0 0
+setfield Weapons[*].OriginBspIndex -1
+setfield Weapons[*].ObjectType.Halo3ODST Weapon
+setfield Weapons[*].Source Editor
+setfield Weapons[*].EditingBoundToBsp -1
+setfield Weapons[*].EditorFolder -1
+setfield Weapons[*].ParentId.NameIndex -1
+setfield Weapons[*].CanAttachToBspFlags 1
+setfield Weapons[*].Multiplayer.Team Neutral
+setfield Weapons[*].Multiplayer.MapVariantParent.NameIndex -1
+
+
+CompileScripts "workingdir\main_menu.hsc"
+
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\pregame_lobby_template.gui_group_widget_definition
+removeblockelements BitmapWidgets 3 1
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\pregame_lobby_template_campaign.gui_group_widget_definition
+removeblockelements BitmapWidgets 3 1
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\pregame_lobby_template_mapeditor.gui_group_widget_definition
+removeblockelements BitmapWidgets 3 1
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\pregame_lobby_template_multiplayer.gui_group_widget_definition
+removeblockelements BitmapWidgets 3 1
+savetagchanges
+exit
+
+edittag multiplayer\mod_globals.mod_globals
+
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.BipedNameIndex 1
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.SettingsCameraIndex 11
+
+setfield PlayerCharacterCustomizations[1].CharacterPositionData.BipedNameIndex 2
+setfield PlayerCharacterCustomizations[1].CharacterPositionData.SettingsCameraIndex 11
+
+savetagchanges
+exit

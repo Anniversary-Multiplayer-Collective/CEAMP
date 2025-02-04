@@ -12,7 +12,7 @@ UseShaderCache "workingdir\caches\shadercache"
 # echo ==Creating Mod Package...==
 CreateModPackage 1 large
 Halo Generational Combat
-This is a mod that ports all of Halo: Combat Evolved into Halo 3, with the goal of keeping true to the original as much as possible whilst updating visuals & gameplay mechanics to fit a perfect balance between old and new, such as CE vehicles being able to be destroyed & having damage states, and modified halo 3 equipment thrown into the Halo: Combat Evolved sandbox.
+This is a mod that ports all of Halo: Combat Evolved into Eldewrito, with the goal of keeping true to the original as much as possible whilst updating visuals & gameplay mechanics to fit a perfect balance between old and new, such as CE vehicles being able to be destroyed & having damage states, and modified halo 3 equipment thrown into the Halo: Combat Evolved sandbox.
 Drksteel, Zekken
 0.1
 Multiplayer Character MainMenu
@@ -126,6 +126,8 @@ savetagchanges
 Exit
 
 RunCommands workingdir\weaponglobals.cmds
+
+RunCommands workingdir\main_menu.cmds
 
 UpdateMapFiles "workshop" ForceUpdate
 
