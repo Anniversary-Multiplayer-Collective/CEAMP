@@ -15,7 +15,7 @@ Halo Generational Combat
 This is a mod that ports all of Halo: Combat Evolved into Halo 3, with the goal of keeping true to the original as much as possible whilst updating visuals & gameplay mechanics to fit a perfect balance between old and new, such as CE vehicles being able to be destroyed & having damage states, and modified halo 3 equipment thrown into the Halo: Combat Evolved sandbox.
 Drksteel, Zekken
 0.1
-Multiplayer Character
+Multiplayer Character MainMenu
 
 RunCommands workingdir\preport.cmds
 
@@ -118,7 +118,11 @@ Exit
 edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
 setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
 savetagchanges
-setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+Exit
+
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
+savetagchanges
 Exit
 
 RunCommands workingdir\weaponglobals.cmds
