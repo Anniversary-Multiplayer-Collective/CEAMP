@@ -114,26 +114,13 @@ OpenCacheFile "workingdir\maps\yoyoisland.map"
 PortTag *.scnr
 Exit
 
-# echo ==Hud...==
-edittag objects\characters\elite\mp_elite\mp_elite.biped
-setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\elite.chud_definition
-savetagchanges
-Exit
+RunCommands workingdir\main_menu.cmds
 
-edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
-setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
-savetagchanges
-Exit
-
-edittag ui\chud\globals.chud_globals_definition
-setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
-savetagchanges
-Exit
-
+OpenModPackage workingdir\HCECustomization.pak
+ApplyModPackage
+ExitModPackage
 
 RunCommands workingdir\weaponglobals.cmds
-
-RunCommands workingdir\main_menu.cmds
 
 RunCommands workingdir\huds.cmds
 

@@ -10,6 +10,7 @@
 	(sleep 8)
 	(fade_in 0 0 0 22)
 	(camera_control true)
+	(camera_set "point_1" -1)
 	(ring_loop)
 )
 

@@ -1,3 +1,29 @@
+# echo ==Biped Huds...==
+edittag objects\characters\elite\mp_elite\mp_elite.biped
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\elite.chud_definition
+savetagchanges
+Exit
+
+edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+savetagchanges
+Exit
+
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
+savetagchanges
+Exit
+
+EditTag objects\characters\elite\mp_elite\mp_elite.biped
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\elite.chud_definition
+savetagchanges
+Exit
+
+EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+savetagchanges
+Exit
+
 ### Bubble Shield
 ##edittag objects\equipment\bubbleshield_equipment\bubbleshield_equipment.equipment
 ##setfield HudInterface custom\ui\chud\e_bubbleshield.chud_definition
