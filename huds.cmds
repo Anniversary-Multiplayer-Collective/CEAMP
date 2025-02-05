@@ -9,16 +9,6 @@ setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definitio
 savetagchanges
 Exit
 
-edittag ui\chud\globals.chud_globals_definition
-setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
-savetagchanges
-Exit
-
-EditTag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
-setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
-savetagchanges
-Exit
-
 EditTag objects\characters\elite\mp_elite\mp_elite.biped
 setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\elite.chud_definition
 savetagchanges
@@ -26,6 +16,16 @@ Exit
 
 EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
 setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+savetagchanges
+Exit
+
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
+savetagchanges
+Exit
+
+EditTag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
 savetagchanges
 Exit
 
@@ -97,6 +97,8 @@ setfield HudInterface custom\ui\chud\hce_pr_test.chud_definition
 savetagchanges
 exit
 
-
-
-
+# Fix Plasma Grenade Offset
+edittag custom\ui\chud\spartan.chud_definition
+setfield HudWidgets[3].PlacementData[0].Offset 67 -9.299999
+savetagchanges
+exit
