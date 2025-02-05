@@ -21,8 +21,8 @@ RunCommands workingdir\preport.cmds
 
 # echo ==Porting...==
 
-OpenCacheFile "workingdir\maps\beavercreek.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\beavercreek.map"
+PortTag !UpdateMapFiles *.scnr
 PortTag custom\ui\chud\elite.chud_definition
 PortTag custom\ui\chud\e_bubbleshield.chud_definition
 PortTag custom\ui\chud\e_gravlift.chud_definition
@@ -30,88 +30,177 @@ PortTag custom\ui\chud\e_flare.chud_definition
 PortTag custom\ui\chud\e_tripmine.chud_definition
 Exit
 
-OpenCacheFile "workingdir\maps\bloodgulch.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\bloodgulch.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\boardingaction.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\boardingaction.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\chillout.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\chillout.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\damnation.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\damnation.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\danger_canyon.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\danger_canyon.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\death_island.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\death_island.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\derelict.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\derelict.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\extinction.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\extinction.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\gephyrophobia.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\gephyrophobia.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\hangemhigh.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\hangemhigh.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\icefields.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\icefields.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\infinity.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\infinity.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\longest.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\longest.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\prisoner.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\prisoner.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\putput.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\putput.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\ratrace.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\ratrace.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\sidewinder.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\sidewinder.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\timberland.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\timberland.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\tutorial.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\tutorial.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\wizard.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\wizard.map"
+PortTag !UpdateMapFiles *.scnr
 Exit
 
-OpenCacheFile "workingdir\maps\yoyoisland.map"
-PortTag *.scnr
+OpenCacheFile "workshop\maps\yoyoisland.map"
+PortTag !UpdateMapFiles *.scnr
+Exit
+
+EditTag custom\levels\multiplayer\beavercreek\beavercreek.scenario
+SetField MapId 7001
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\bloodgulch\bloodgulch.scenario
+SetField MapId 7002
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\boardingaction\boardingaction.scenario
+SetField MapId 7003
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\chillout\chillout.scenario
+SetField MapId 7004
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\damnation\damnation.scenario
+SetField MapId 7005
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\danger_canyon\danger_canyon.scenario
+SetField MapId 7006
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\death_island\death_island.scenario
+SetField MapId 7007
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\derelict\derelict.scenario
+SetField MapId 7008
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\extinction\extinction.scenario
+SetField MapId 7009
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\gephyrophobia\gephyrophobia.scenario
+SetField MapId 7010
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\hangemhigh\hangemhigh.scenario
+SetField MapId 7011
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\icefields\icefields.scenario
+SetField MapId 7012
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\infinity\infinity.scenario
+SetField MapId 7013
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\longest\longest.scenario
+SetField MapId 7014
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\prisoner\prisoner.scenario
+SetField MapId 7015
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\putput\putput.scenario
+SetField MapId 7016
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\ratrace\ratrace.scenario
+SetField MapId 7017
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\sidewinder\sidewinder.scenario
+SetField MapId 7018
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\timberland\timberland.scenario
+SetField MapId 7019
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\tutorial\tutorial.scenario
+SetField MapId 7020
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\wizard\wizard.scenario
+SetField MapId 7021
+SaveTagChanges
+Exit
+EditTag custom\levels\multiplayer\yoyoisland\yoyoisland.scenario
+SetField MapId 7022
+SaveTagChanges
 Exit
 
 RunCommands workingdir\main_menu.cmds
@@ -134,7 +223,7 @@ SaveTagChanges
 Exit
 
 
-UpdateMapFiles "workshop" ForceUpdate
+UpdateMapFiles "workshop"
 
 AddModFiles workingdir\assets
 

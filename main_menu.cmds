@@ -8,7 +8,7 @@ NameTag levels\ui\mainmenu\mainmenu.scenario levels\ui\mainmenu\mainmenu_ed
 NameTag levels\ui\mainmenu\sky\sky.render_model levels\ui\mainmenu\sky\sky_ed
 
 OpenCacheFile "workingdir\maps\mainmenu.map"
-PortTag *.scnr
+PortTag !UpdateMapFiles *.scnr
 PortTag kashiiera\ui\main_menu\bitmaps\halo_logo.bitm
 PortTag kashiiera\sounds\ui\main_menu_music.lsnd
 Exit
