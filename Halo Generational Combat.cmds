@@ -28,6 +28,8 @@ PortTag custom\ui\chud\e_bubbleshield.chud_definition
 PortTag custom\ui\chud\e_gravlift.chud_definition
 PortTag custom\ui\chud\e_flare.chud_definition
 PortTag custom\ui\chud\e_tripmine.chud_definition
+PortTag custom\weapons\hce\hce_frag\frag_grenade.projectile
+PortTag custom\weapons\hce\hce_plasma\plasma_grenade.projectile
 Exit
 
 OpenCacheFile "workshop\maps\bloodgulch.map"
@@ -221,6 +223,27 @@ EditTag custom\objects\scen\mp_obj\hce_tele_big\hce_tele.model
 SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
 SaveTagChanges
 Exit
+#This one still seems a little too small
+EditTag custom\objects\scen\mp_obj\hce_tele_flat_wide\hce_tele.model
+SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
+SaveTagChanges
+Exit
+
+edittag globals\globals.globals
+addblockelements Grenades
+addblockelements Grenades
+setfield Grenades[4].ThrowingEffect sound\weapons\frag_grenade\frag_throw.effect
+setfield Grenades[4].Equipment custom\weapons\hce\hce_frag\frag_grenade.equipment
+setfield Grenades[4].Projectile custom\weapons\hce\hce_frag\frag_grenade.projectile
+setfield Grenades[4].MaximumCount 4
+setfield Grenades[5].MaximumCount 4
+setfield Grenades[5].ThrowingEffect sound\weapons\plasma_grenade\throwgren.effect
+setfield Grenades[5].Equipment custom\weapons\hce\hce_plasma\plasma_grenade.equipment
+setfield Grenades[5].Projectile custom\weapons\hce\hce_plasma\plasma_grenade.projectile
+savetagchanges
+exit
+
+
 
 
 UpdateMapFiles "workshop"
