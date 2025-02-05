@@ -1,0 +1,5 @@
+Hud icon for fire and spike grenade
+Sprint Animations
+Make Health not regenerate?
+Fix equipment HUD, most are missing the custom hud and also it doesnt show if you replce the chud either
+Make huds for other weapons

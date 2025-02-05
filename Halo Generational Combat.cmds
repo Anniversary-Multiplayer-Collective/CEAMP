@@ -23,6 +23,11 @@ RunCommands workingdir\preport.cmds
 
 OpenCacheFile "workingdir\maps\beavercreek.map"
 PortTag *.scnr
+PortTag custom\ui\chud\elite.chud_definition
+PortTag custom\ui\chud\e_bubbleshield.chud_definition
+PortTag custom\ui\chud\e_gravlift.chud_definition
+PortTag custom\ui\chud\e_flare.chud_definition
+PortTag custom\ui\chud\e_tripmine.chud_definition
 Exit
 
 OpenCacheFile "workingdir\maps\bloodgulch.map"
@@ -111,7 +116,7 @@ Exit
 
 # echo ==Hud...==
 edittag objects\characters\elite\mp_elite\mp_elite.biped
-setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+setfield HudInterfaces[0].UnitHudInterface custom\ui\chud\elite.chud_definition
 savetagchanges
 Exit
 
@@ -125,9 +130,15 @@ setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
 savetagchanges
 Exit
 
+
 RunCommands workingdir\weaponglobals.cmds
 
 RunCommands workingdir\main_menu.cmds
+
+RunCommands workingdir\huds.cmds
+
+# echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
+cs < "workingdir\WeaponWaterFix.cs"
 
 UpdateMapFiles "workshop" ForceUpdate
 

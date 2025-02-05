@@ -1,0 +1,71 @@
+### Bubble Shield
+##edittag objects\equipment\bubbleshield_equipment\bubbleshield_equipment.equipment
+##setfield HudInterface custom\ui\chud\e_bubbleshield.chud_definition
+##savetagchanges
+##exit
+##
+### Gravlift
+##EditTag objects\equipment\gravlift_equipment\gravlift_equipment.equipment
+##setfield HudInterface custom\ui\chud\e_gravlift.chud_definition
+##savetagchanges
+##exit
+##
+### Flare
+##EditTag objects\equipment\superflare_equipment\superflare_equipment.equipment
+##setfield HudInterface custom\ui\chud\e_flare.chud_definition
+##savetagchanges
+##exit
+##
+### Bubble Shield
+##EditTag objects\equipment\bubbleshield_equipment\bubbleshield_equipment.equipment
+##setfield HudInterface custom\ui\chud\e_bubbleshield.chud_definition
+##savetagchanges
+##exit
+
+# Rocker Launcher
+edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+setfield HudInterface custom\ui\chud\hce_rocket.chud_definition
+savetagchanges
+exit
+
+# Needler
+edittag objects\weapons\pistol\needler\needler.weapon
+setfield HudInterface custom\ui\chud\hce_needler.chud_definition
+setfield Magazines[0].RoundsReloaded 20
+setfield Magazines[0].RoundsLoadedMaximum 20
+savetagchanges
+exit
+
+# Sniper Rifle
+edittag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+setfield HudInterface custom\ui\chud\hce_sniper.chud_definition
+savetagchanges
+exit
+
+# Plasma Pistol
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+setfield HudInterface custom\ui\chud\hce_pp.chud_definition
+savetagchanges
+exit
+
+# Plasma Pistol Power
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weapon
+setfield HudInterface custom\ui\chud\hce_pp.chud_definition
+savetagchanges
+exit
+
+# Plasma Rifle
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+setfield HudInterface custom\ui\chud\hce_pr_test.chud_definition
+savetagchanges
+exit
+
+# Plasma Rifle Power
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weapon
+setfield HudInterface custom\ui\chud\hce_pr_test.chud_definition
+savetagchanges
+exit
+
+
+
+
