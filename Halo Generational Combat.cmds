@@ -205,19 +205,6 @@ SetField MapId 7022
 SaveTagChanges
 Exit
 
-RunCommands workingdir\main_menu.cmds
-
-OpenModPackage workingdir\HCECustomization.pak
-ApplyModPackage
-ExitModPackage
-
-RunCommands workingdir\weaponglobals.cmds
-
-RunCommands workingdir\huds.cmds
-
-# echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
-cs < "workingdir\WeaponWaterFix.cs"
-
 # echo ==Fix Teleporter Scaling...==
 EditTag custom\objects\scen\mp_obj\hce_tele_big\hce_tele.model
 SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
@@ -225,6 +212,14 @@ SaveTagChanges
 Exit
 #This one still seems a little too small
 EditTag custom\objects\scen\mp_obj\hce_tele_flat_wide\hce_tele.model
+SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
+SaveTagChanges
+Exit
+EditTag custom\objects\scen\mp_obj\hce_tele\hce_tele.model
+SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
+SaveTagChanges
+Exit
+EditTag custom\objects\scen\mp_obj\hce_tele_flat\hce_tele.model
 SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
 SaveTagChanges
 Exit
@@ -243,7 +238,20 @@ setfield Grenades[5].Projectile custom\weapons\hce\hce_plasma\plasma_grenade.pro
 savetagchanges
 exit
 
+RunCommands workingdir\main_menu.cmds
 
+OpenModPackage workingdir\HCECustomization.pak
+ApplyModPackage
+ExitModPackage
+
+RunCommands workingdir\weaponglobals.cmds
+
+RunCommands workingdir\huds.cmds
+
+RunCommands workingdir\viewmodel_offsets.cmds
+
+# echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
+cs < "workingdir\WeaponWaterFix.cs"
 
 
 UpdateMapFiles "workshop"

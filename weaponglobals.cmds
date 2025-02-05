@@ -884,7 +884,7 @@ SaveTagChanges
 Exit
 
 EditTag ui\halox\game_options\strings.unic
-SetString english WARTHOG_ROCKET_TURRET "Warthog Rocket Turret"
+SetString english WARTHOG_ROCKET_TURRET "Rocket Warthog Turret"
 SaveTagChanges
 Exit
 

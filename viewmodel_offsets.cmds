@@ -1,0 +1,161 @@
+# echo ==Viewmodel Offsets...==
+
+EditTag ui\weapon_type_names.multilingual_unicode_string_list
+
+stringid add OFFSET_HCE_AR
+SetString english OFFSET_HCE_AR "CE Assault Rifle"
+stringid add OFFSET_HCE_AR_GOLD
+SetString english OFFSET_HCE_AR_GOLD "Gold CE Assault Rifle"
+stringid add OFFSET_HCE_MAGNUM
+SetString english OFFSET_HCE_MAGNUM "CE Magnum"
+stringid add OFFSET_HCE_MAGNUM_GOLD
+SetString english OFFSET_HCE_MAGNUM_GOLD "Gold CE Magnum"
+stringid add OFFSET_HCE_PP
+SetString english OFFSET_HCE_PP "CE Plasma Pistol"
+stringid add OFFSET_HCE_PR
+SetString english OFFSET_HCE_PR "CE Plasma Rifle"
+stringid add OFFSET_HCE_BRUTE_PR
+SetString english OFFSET_HCE_BRUTE_PR "CE Brute Plasma Rifle"
+stringid add OFFSET_HCE_NEEDLER
+SetString english OFFSET_HCE_NEEDLER "CE Needler"
+stringid add OFFSET_HCE_SHOTTY
+SetString english OFFSET_HCE_SHOTTY "CE Shotgun"
+stringid add OFFSET_HCE_SHOTTY_GOLD
+SetString english OFFSET_HCE_SHOTTY_GOLD "Gold CE Shotgun"
+stringid add OFFSET_H2_BR
+SetString english OFFSET_H2_BR "H2 Battle Rifle"
+stringid add OFFSET_HCE_SNIPER
+SetString english OFFSET_HCE_SNIPER "CE Sniper Rifle"
+stringid add OFFSET_HCE_SWORD
+SetString english OFFSET_HCE_SWORD "CE Sword"
+stringid add OFFSET_HCE_FLAMER
+SetString english OFFSET_HCE_FLAMER "CE Flame Thrower"
+stringid add OFFSET_HUNTER_CANNON
+SetString english OFFSET_HUNTER_CANNON "Hunter Cannon"
+stringid add OFFSET_FUEL_ROD_GUN
+SetString english OFFSET_FUEL_ROD_GUN "CE Fuel Rod Gun"
+stringid add OFFSET_WARTHOG_TURRET
+SetString english OFFSET_WARTHOG_TURRET "Warthog Turret"
+stringid add OFFSET_WARTHOG_ROCKET_TURRET
+SetString english OFFSET_WARTHOG_ROCKET_TURRET "Rocket Warthog Turret"
+stringid add OFFSET_HCE_ROCKETLAUNCHER
+SetString english OFFSET_HCE_ROCKETLAUNCHER "HCE Rocket Launcher"
+
+SaveTagChanges
+Exit
+
+# Weapon Assignments
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField WeaponTypeName OFFSET_HCE_AR
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon
+SetField WeaponTypeName OFFSET_HCE_AR_GOLD
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField WeaponTypeName OFFSET_HCE_MAGNUM
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon
+SetField WeaponTypeName OFFSET_HCE_MAGNUM_GOLD
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField WeaponTypeName OFFSET_HCE_PP
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField WeaponTypeName OFFSET_HCE_PR
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_plasma_rifle\brute_variant\brute_hce_pr.weapon
+SetField WeaponTypeName OFFSET_HCE_BRUTE_PR
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_needler\hce_needler.weapon
+SetField WeaponTypeName OFFSET_HCE_NEEDLER
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_shotty\hce_shotgun.weapon
+SetField WeaponTypeName OFFSET_HCE_SHOTTY
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_shotgun\gold_variant\shotgun_gold.weapon
+SetField WeaponTypeName OFFSET_HCE_SHOTTY_GOLD
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon
+SetField WeaponTypeName OFFSET_H2_BR
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_sniper\hce_sniper.weapon
+SetField WeaponTypeName OFFSET_HCE_SNIPER
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_sword\hce_sword.weapon
+SetField WeaponTypeName OFFSET_HCE_SWORD
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon
+SetField WeaponTypeName OFFSET_HCE_FLAMER
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag objects\characters\hunter\hunter_particle_cannon\hunter_particle_cannon.weapon
+SetField WeaponTypeName OFFSET_HUNTER_CANNON
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon
+SetField WeaponTypeName OFFSET_FUEL_ROD_GUN
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\vehicles\tgof_hce_warthog\turret\turret_weapon\turret_weapon.weapon
+SetField WeaponTypeName OFFSET_WARTHOG_TURRET
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\vehicles\tgof_hce_new_rwarthog\r_turret\rturret_weapon\rturret_weapon.weapon
+SetField WeaponTypeName OFFSET_WARTHOG_ROCKET_TURRET
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon
+SetField WeaponTypeName OFFSET_HCE_ROCKETLAUNCHER
+#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SaveTagChanges
+Exit
