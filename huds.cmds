@@ -109,6 +109,24 @@ setfield HudInterface ui\chud\battle_rifle.chud_definition
 savetagchanges
 exit
 
+#SMG
+edittag objects\weapons\rifle\smg\smg.weapon
+setfield HudInterface custom\ui\chud\hce_ar.chud_definition
+savetagchanges
+exit
+
+#Power SMG
+edittag objects\weapons\rifle\smg\smg_power.weapon
+setfield HudInterface custom\ui\chud\hce_ar.chud_definition
+savetagchanges
+exit
+
+#Accuracy SMG
+edittag objects\weapons\rifle\smg\smg_accuracy.weapon
+setfield HudInterface custom\ui\chud\hce_ar.chud_definition
+savetagchanges
+exit
+
 # Fix Plasma Grenade Hud Offset
 edittag custom\ui\chud\spartan.chud_definition
 setfield HudWidgets[3].PlacementData[0].Offset 67 -9.299999
