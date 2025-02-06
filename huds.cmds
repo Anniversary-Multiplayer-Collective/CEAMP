@@ -97,6 +97,18 @@ setfield HudInterface custom\ui\chud\hce_pr_test.chud_definition
 savetagchanges
 exit
 
+#Range BR
+edittag objects\weapons\rifle\battle_rifle_range\battle_rifle_range.weapon
+setfield HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+#Rate Of Fire BR
+edittag objects\weapons\rifle\battle_rifle_rof\battle_rifle_rof.weapon
+setfield HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
 # Fix Plasma Grenade Hud Offset
 edittag custom\ui\chud\spartan.chud_definition
 setfield HudWidgets[3].PlacementData[0].Offset 67 -9.299999
