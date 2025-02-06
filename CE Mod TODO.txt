@@ -1,4 +1,3 @@
-Fix BR ammo counter being small
 Invisible ceiling barrier is too low on battle creek
 Hud icon for fire and spike grenade
 Fix Godrays on Gephy https://s.zekken.rocks/a6Dx8E1Z.jpg

@@ -103,6 +103,7 @@ setfield HudWidgets[3].PlacementData[0].Offset 67 -9.299999
 savetagchanges
 exit
 
+#Remove hud warp
 edittag ui\chud\globals.chud_globals_definition
 setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0,01
 savetagchanges
@@ -112,3 +113,9 @@ edittag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
 setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0,01
 savetagchanges
 exit
+
+# echo ==Fix Battle Rifle Hud Scaling...=
+EditTag ui\chud\battle_rifle.chud_definition
+SetField HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SaveTagChanges
+Exit
