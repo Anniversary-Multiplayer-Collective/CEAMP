@@ -149,3 +149,70 @@ EditTag ui\chud\battle_rifle.chud_definition
 SetField HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
+
+# echo ==Fix Crosshair Scale...=
+edittag custom\ui\chud\hce_ar.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_aarocket.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_fuel.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_magnum.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_needler.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_pp.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_rocket.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_shotgun.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_sniper.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_warthog_mg_turret_detatched.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\hce_warthog_rkt_turret_detatched.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\v_banshee.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag custom\ui\chud\v_ghost.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
