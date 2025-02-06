@@ -257,6 +257,11 @@ RunCommands workingdir\viewmodel_offsets.cmds
 # echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
 cs < "workingdir\WeaponWaterFix.cs"
 
+# echo ==Replace shade on sidewinder...==
+edittag custom\levels\multiplayer\sidewinder\sidewinder.scenario
+setfield VehiclePalette[5].Object kashiiera\objects\vehicles\shade_ce\shade_ce.vehicle
+savetagchanges
+exit
 
 UpdateMapFiles "workshop"
 

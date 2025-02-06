@@ -171,10 +171,10 @@ setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
 savetagchanges
 exit
 
-edittag custom\ui\chud\hce_needler.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
-savetagchanges
-exit
+##edittag custom\ui\chud\hce_needler.chud_definition
+##setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+##savetagchanges
+##exit
 
 edittag custom\ui\chud\hce_pp.chud_definition
 setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
