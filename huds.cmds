@@ -97,8 +97,18 @@ setfield HudInterface custom\ui\chud\hce_pr_test.chud_definition
 savetagchanges
 exit
 
-# Fix Plasma Grenade Offset
+# Fix Plasma Grenade Hud Offset
 edittag custom\ui\chud\spartan.chud_definition
 setfield HudWidgets[3].PlacementData[0].Offset 67 -9.299999
+savetagchanges
+exit
+
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0,01
+savetagchanges
+exit
+
+edittag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0,01
 savetagchanges
 exit
