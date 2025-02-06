@@ -31,3 +31,6 @@ nametag objects\vehicles\scorpion\scorpion.model_animation_graph objects\vehicle
 nametag objects\vehicles\scorpion\turrets\cannon\cannon.collision_model objects\vehicles\scorpion\turrets\reach_cannon\reach_cannon
 nametag objects\vehicles\scorpion\turrets\cannon\cannon.physics_model objects\vehicles\scorpion\turrets\reach_cannon\reach_cannon
 nametag objects\vehicles\scorpion\turrets\cannon\cannon.model_animation_graph objects\vehicles\scorpion\turrets\reach_cannon\reach_cannon
+
+
+NameTag ui\chud\battle_rifle.chud_definition ui\chud\battle_rifle_ed

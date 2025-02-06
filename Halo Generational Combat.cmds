@@ -206,11 +206,11 @@ SaveTagChanges
 Exit
 
 # echo ==Fix Teleporter Scaling...==
+#Some still seems a little too small
 EditTag custom\objects\scen\mp_obj\hce_tele_big\hce_tele.model
 SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
 SaveTagChanges
 Exit
-#This one still seems a little too small
 EditTag custom\objects\scen\mp_obj\hce_tele_flat_wide\hce_tele.model
 SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
 SaveTagChanges
@@ -220,6 +220,10 @@ SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
 SaveTagChanges
 Exit
 EditTag custom\objects\scen\mp_obj\hce_tele_flat\hce_tele.model
+SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
+SaveTagChanges
+Exit
+EditTag custom\objects\scen\mp_obj\hce_tele_flat_small\hce_tele.model
 SetField PhysicsModel objects\ui\editor_gizmo\editor_gizmo.physics_model
 SaveTagChanges
 Exit
