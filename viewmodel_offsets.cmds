@@ -48,85 +48,83 @@ Exit
 
 EditTag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
 SetField WeaponTypeName OFFSET_HCE_AR
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.047 -0.001 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon
 SetField WeaponTypeName OFFSET_HCE_AR_GOLD
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.047 -0.001 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
 SetField WeaponTypeName OFFSET_HCE_MAGNUM
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.048 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon
 SetField WeaponTypeName OFFSET_HCE_MAGNUM_GOLD
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.048 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_pp\hce_pp.weapon
 SetField WeaponTypeName OFFSET_HCE_PP
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.039 0 -0.008
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_pr\hce_pr.weapon
 SetField WeaponTypeName OFFSET_HCE_PR
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.074 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\tgof_hce_plasma_rifle\brute_variant\brute_hce_pr.weapon
 SetField WeaponTypeName OFFSET_HCE_BRUTE_PR
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.074 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_needler\hce_needler.weapon
 SetField WeaponTypeName OFFSET_HCE_NEEDLER
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.023 -0.011 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_shotty\hce_shotgun.weapon
 SetField WeaponTypeName OFFSET_HCE_SHOTTY
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.047 -0.01 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\tgof_shotgun\gold_variant\shotgun_gold.weapon
 SetField WeaponTypeName OFFSET_HCE_SHOTTY_GOLD
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+#SetField CenteredFirstPersonWeaponOffset 0.047 -0.01 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon
 SetField WeaponTypeName OFFSET_H2_BR
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.022 0 -0.004
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_sniper\hce_sniper.weapon
 SetField WeaponTypeName OFFSET_HCE_SNIPER
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.032 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_sword\hce_sword.weapon
 SetField WeaponTypeName OFFSET_HCE_SWORD
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon
 SetField WeaponTypeName OFFSET_HCE_FLAMER
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
 SaveTagChanges
 Exit
 
@@ -138,24 +136,22 @@ Exit
 
 EditTag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon
 SetField WeaponTypeName OFFSET_FUEL_ROD_GUN
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.019 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\vehicles\tgof_hce_warthog\turret\turret_weapon\turret_weapon.weapon
 SetField WeaponTypeName OFFSET_WARTHOG_TURRET
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\vehicles\tgof_hce_new_rwarthog\r_turret\rturret_weapon\rturret_weapon.weapon
 SetField WeaponTypeName OFFSET_WARTHOG_ROCKET_TURRET
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
 SaveTagChanges
 Exit
 
 EditTag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon
 SetField WeaponTypeName OFFSET_HCE_ROCKETLAUNCHER
-#SetField CenteredFirstPersonWeaponOffset 0 0 0
+SetField CenteredFirstPersonWeaponOffset 0.016 0 0
 SaveTagChanges
 Exit
