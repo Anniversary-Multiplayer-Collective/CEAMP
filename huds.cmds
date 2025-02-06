@@ -197,12 +197,7 @@ savetagchanges
 exit
 
 edittag custom\ui\chud\hce_warthog_mg_turret_detatched.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
-savetagchanges
-exit
-
-edittag custom\ui\chud\hce_warthog_rkt_turret_detatched.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
 savetagchanges
 exit
 
@@ -216,3 +211,7 @@ setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
 savetagchanges
 exit
 
+edittag ui\chud\battle_rifle.chud_definition
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
