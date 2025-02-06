@@ -234,6 +234,21 @@ setfield VehiclePalette[5].Object kashiiera\objects\vehicles\shade_ce\shade_ce.v
 savetagchanges
 exit
 
+# echo ==Test out CE Walk and Jump...==
+edittag globals\globals.globals
+setfield PlayerInformation[0].RunForward 2.25
+setfield PlayerInformation[1].RunForward 2.25
+savetagchanges
+exit
+edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+setfield JumpVelocity 2.7
+savetagchanges
+exit
+edittag objects\characters\elite\mp_elite\mp_elite.biped
+setfield JumpVelocity 2.7
+savetagchanges
+exit
+
 RunCommands workingdir\main_menu.cmds
 
 OpenModPackage workingdir\HCECustomization.pak
