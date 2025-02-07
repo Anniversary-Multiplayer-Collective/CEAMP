@@ -36,23 +36,25 @@ setfield TextWidgets[0].Definition.GuiRenderBlock.Bounds720p 2 0 45 378
 SaveTagChanges
 Exit
 
-# Remove Orange Main Menu List
+# Remove Orange Main Menu Highlight
 edittag ui\halox\main_menu\main_menu_list.gui_skin_definition
 setfield BitmapWidgets[0].Definition.Bitmap null
 savetagchanges
 Exit
 
-#MM Music
+# Main Menu Music
 EditTag ui\ui_shared_globals.user_interface_shared_globals_definition
 setfield MainMenuMusic kashiiera\sounds\ui\main_menu_music.lsnd
 SaveTagChanges
 Exit
 
+# Fix crispy bitmap
 EditTag kashiiera\objects\gear\forerunner\halo\bitmaps\outer_ring_zbump.bitmap
 ImportBitmap 0 workingdir\bitmaps\outer_ring_zbump2.dds
 SaveTagChanges
 Exit
 
+# Make Halo not shiny
 edittag kashiiera\objects\gear\forerunner\halo\shaders\outer_ring.shader
 setargument specular_coefficient 0.1
 SaveTagChanges
