@@ -103,8 +103,8 @@ setfield Bipeds[*].PaletteIndex 0
 setfield Bipeds[*].NameIndex 1
 setfield Bipeds[*].Position 1 0 0
 setfield Bipeds[*].Rotation 1 0 0
-setfield Bipeds[*].OriginBspIndex -1
-setfield Bipeds[*].Source Editor
+setfield Bipeds[*].ObjectId.OriginBspIndex -1
+setfield Bipeds[*].ObjectId.Source Editor
 setfield Bipeds[*].EditingBoundToBsp -1
 setfield Bipeds[*].EditorFolder -1
 setfield Bipeds[*].ParentId.NameIndex -1
@@ -115,8 +115,8 @@ setfield Bipeds[*].PaletteIndex 1
 setfield Bipeds[*].NameIndex 2
 setfield Bipeds[*].Position 1 0 0
 setfield Bipeds[*].Rotation 1 0 0
-setfield Bipeds[*].OriginBspIndex -1
-setfield Bipeds[*].Source Editor
+setfield Bipeds[*].ObjectId.OriginBspIndex -1
+setfield Bipeds[*].ObjectId.Source Editor
 setfield Bipeds[*].EditingBoundToBsp -1
 setfield Bipeds[*].EditorFolder -1
 setfield Bipeds[*].ParentId.NameIndex -1
@@ -127,9 +127,9 @@ setfield Weapons[*].PaletteIndex 0
 setfield Weapons[*].NameIndex 3
 setfield Weapons[*].Position 1 0 0
 setfield Weapons[*].Rotation 1 0 0
-setfield Weapons[*].OriginBspIndex -1
-setfield Weapons[*].ObjectType.Halo3ODST Weapon
-setfield Weapons[*].Source Editor
+setfield Weapons[*].ObjectId.OriginBspIndex -1
+setfield Weapons[*].ObjectId.Type.Halo3ODST Weapon
+setfield Weapons[*].ObjectId.Source Editor
 setfield Weapons[*].EditingBoundToBsp -1
 setfield Weapons[*].EditorFolder -1
 setfield Weapons[*].ParentId.NameIndex -1
@@ -142,9 +142,9 @@ setfield Weapons[*].PaletteIndex 1
 setfield Weapons[*].NameIndex 4
 setfield Weapons[*].Position 1 0 0
 setfield Weapons[*].Rotation 1 0 0
-setfield Weapons[*].OriginBspIndex -1
-setfield Weapons[*].ObjectType.Halo3ODST Weapon
-setfield Weapons[*].Source Editor
+setfield Weapons[*].ObjectId.OriginBspIndex -1
+setfield Weapons[*].ObjectId.Type.Halo3ODST Weapon
+setfield Weapons[*].ObjectId.Source Editor
 setfield Weapons[*].EditingBoundToBsp -1
 setfield Weapons[*].EditorFolder -1
 setfield Weapons[*].ParentId.NameIndex -1
