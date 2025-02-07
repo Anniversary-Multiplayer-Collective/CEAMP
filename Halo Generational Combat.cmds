@@ -249,6 +249,35 @@ setfield JumpVelocity 2.7
 savetagchanges
 exit
 
+# echo ==Set podium weapons to CE variants...==
+edittag multiplayer\multiplayer_globals.multiplayer_globals
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+setfield Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+savetagchanges
+Exit
+
 RunCommands "workingdir\main_menu.cmds"
 
 OpenModPackage "workingdir\paks\HCECustomization.pak"
@@ -258,6 +287,7 @@ ExitModPackage
 OpenModPackage "workingdir\paks\1999_Emotes v1_5 CUSTOM.pak"
 ApplyModPackage
 ExitModPackage
+DeleteModFiles
 
 RunCommands "workingdir\weaponglobals.cmds"
 
