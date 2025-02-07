@@ -1,0 +1,264 @@
+EditTag custom\levels\multiplayer\beavercreek\beavercreek.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -9.073 -3.430 5.740
+SetField CutsceneCameraPoints[0].Orientation 15.150 -18.804 -4.988
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -6.004 0.797 -0.201
+SetField CutsceneCameraPoints[1].Orientation 0.779 0.083 0.043
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\bloodgulch\bloodgulch.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -44.252 46.663 8.531
+SetField CutsceneCameraPoints[0].Orientation -50.712 -1.864 2.277
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 13.321 -45.001 0.123
+SetField CutsceneCameraPoints[1].Orientation -60 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\boardingaction\boardingaction.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -0.305 14.898 5.276
+SetField CutsceneCameraPoints[0].Orientation -89.245 -0.177 13.257
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -10.842 9.344 4.142
+SetField CutsceneCameraPoints[1].Orientation 0 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\chillout\chillout.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -0.216 0.406 3.320
+SetField CutsceneCameraPoints[0].Orientation -86.964 -1.438 25.341
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 1.101 5.557 0.762
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\damnation\damnation.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -4.437 -1.437 4.248
+SetField CutsceneCameraPoints[0].Orientation 120.930 18.698 -28.147
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 7.614 -9.499 4.514
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\danger_canyon\danger_canyon.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -0.150 77.590 2.523
+SetField CutsceneCameraPoints[0].Orientation -90.083 0.027 17.875
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -0.167 68.527 -0.371
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\death_island\death_island.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 63.983 24.095 114.572
+SetField CutsceneCameraPoints[0].Orientation -168.957 11.455 2.219
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 28.092 20.342 126.650
+SetField CutsceneCameraPoints[1].Orientation 180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\derelict\derelict.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 11.832 0.053 -1.852
+SetField CutsceneCameraPoints[0].Orientation -179.932 3.753 0.004
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 0.365 11.256 -5.209
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\extinction\extinction.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -267.328 68.259 555.176
+SetField CutsceneCameraPoints[0].Orientation -58.123 -6.152 9.777
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -8.688 -601.686 535.951
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\gephyrophobia\gephyrophobia.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 34.215 3.608 17.091
+SetField CutsceneCameraPoints[0].Orientation 179.333 14.636 -0.168
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 6.287 81.567 4.507
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\hangemhigh\hangemhigh.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -2.841 3.008 7.795
+SetField CutsceneCameraPoints[0].Orientation -46.559 -9.083 9.464
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -12.289 1.257 2.831
+SetField CutsceneCameraPoints[1].Orientation -180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\icefields\icefields.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 19.456 1.950 13.117
+SetField CutsceneCameraPoints[0].Orientation -145.160 9.120 6.296
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 0.464 -9.518 9.857
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\infinity\infinity.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 27.607 13.070 28.094
+SetField CutsceneCameraPoints[0].Orientation -144.980 21.589 14.457
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -4.338 106.049 7.586
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\longest\longest.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 5.659 -22.245 17.285
+SetField CutsceneCameraPoints[0].Orientation -179.943 3.353 0.003
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 8.692 -17.699 14.924
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\prisoner\prisoner.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -5.414 -1.946 6.298
+SetField CutsceneCameraPoints[0].Orientation 24.632 -18.202 -8.151
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 3.891 0.340 -0.513
+SetField CutsceneCameraPoints[1].Orientation 0 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\putput\putput.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -10.740 -4.328 0.841
+SetField CutsceneCameraPoints[0].Orientation 105.297 0.964 -3.523
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -11.376 -18.252 0.263
+SetField CutsceneCameraPoints[1].Orientation -180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\ratrace\ratrace.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 2.955 0.219 -2.400
+SetField CutsceneCameraPoints[0].Orientation -127.710 3.511 4.529
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 3.288 -10.463 -4.109
+SetField CutsceneCameraPoints[1].Orientation -180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\sidewinder\sidewinder.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -37.185 -17.190 1.907
+SetField CutsceneCameraPoints[0].Orientation -70.588 -7.208 19.600
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 2.128 -42.880 -3.827
+SetField CutsceneCameraPoints[1].Orientation 0 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\timberland\timberland.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 12.565 -36.413 -12.528
+SetField CutsceneCameraPoints[0].Orientation -56.385 -9.659 14.165
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -16.378 52.829 -13.337
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\tutorial\tutorial.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 4.409 -6.204 3.215
+SetField CutsceneCameraPoints[0].Orientation 123.683 13.725 -19.596
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -0.176 -12.127 0.540
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\wizard\wizard.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -7.428 4.308 5.900
+SetField CutsceneCameraPoints[0].Orientation -32.648 -10.571 6.704
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -5.059 4.617 3.464
+SetField CutsceneCameraPoints[1].Orientation 135 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag custom\levels\multiplayer\yoyoisland\yoyoisland.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 51.671 -22.199 284.111
+SetField CutsceneCameraPoints[0].Orientation 173.144 20.827 -2.447
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 7.076 12.849 282.645
+SetField CutsceneCameraPoints[1].Orientation 90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+

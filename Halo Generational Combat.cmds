@@ -17,7 +17,7 @@ Drksteel, Zekken
 0.1
 Multiplayer Character MainMenu
 
-RunCommands workingdir\preport.cmds
+RunCommands "workingdir\preport.cmds"
 
 # echo ==Porting...==
 
@@ -249,24 +249,30 @@ setfield JumpVelocity 2.7
 savetagchanges
 exit
 
-RunCommands workingdir\main_menu.cmds
+RunCommands "workingdir\main_menu.cmds"
 
-OpenModPackage workingdir\HCECustomization.pak
+OpenModPackage "workingdir\paks\HCECustomization.pak"
 ApplyModPackage
 ExitModPackage
 
-RunCommands workingdir\weaponglobals.cmds
+OpenModPackage "workingdir\paks\1999_Emotes v1_5 CUSTOM.pak"
+ApplyModPackage
+ExitModPackage
 
-RunCommands workingdir\huds.cmds
+RunCommands "workingdir\weaponglobals.cmds"
 
-RunCommands workingdir\viewmodel_offsets.cmds
+RunCommands "workingdir\huds.cmds"
+
+RunCommands "workingdir\viewmodel_offsets.cmds"
+
+RunCommands "workingdir\camera_positions.cmds"
 
 # echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
 cs < "workingdir\WeaponWaterFix.cs"
 
 UpdateMapFiles "workshop"
 
-AddModFiles workingdir\assets
+AddModFiles "workingdir\assets"
 
 SaveModPackage
 
