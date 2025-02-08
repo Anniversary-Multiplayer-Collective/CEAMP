@@ -249,6 +249,17 @@ setfield JumpVelocity 2.7
 savetagchanges
 exit
 
+RunCommands "workingdir\main_menu.cmds"
+
+OpenModPackage "workingdir\paks\HCECustomization.pak"
+ApplyModPackage
+ExitModPackage
+
+OpenModPackage "workingdir\paks\1999_Emotes v1_5 CUSTOM.pak"
+ApplyModPackage
+ExitModPackage
+DeleteModFiles
+
 # echo ==Set podium weapons to CE variants...==
 edittag multiplayer\multiplayer_globals.multiplayer_globals
 setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
@@ -277,17 +288,6 @@ setfield Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomSecondaryWeapo
 setfield Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
 savetagchanges
 Exit
-
-RunCommands "workingdir\main_menu.cmds"
-
-OpenModPackage "workingdir\paks\HCECustomization.pak"
-ApplyModPackage
-ExitModPackage
-
-OpenModPackage "workingdir\paks\1999_Emotes v1_5 CUSTOM.pak"
-ApplyModPackage
-ExitModPackage
-DeleteModFiles
 
 RunCommands "workingdir\weaponglobals.cmds"
 
