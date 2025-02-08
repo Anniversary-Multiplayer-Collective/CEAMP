@@ -21,11 +21,11 @@ RemoveBlockElements GroupWidgets[0].Definition.BitmapWidgets 0 *
 SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.Bitmap kashiiera\ui\main_menu\bitmaps\halo_logo.bitm
 # SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.Bitmap ui\halox\battlefront_main_menu\bf_mainmenu.bitmap
 setfield GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 50 400 325 1150
-SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 100 475 275 1075
 # SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 355 545 649 950
 # SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 355 545 649 950
 SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds720p 400 555 0 0
-SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds480i 400 555 0 0
+SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.GuiRenderBlock.Bounds480i 400 288 0 0
+SetField GroupWidgets[1].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds480i 80 180 275 700
 SaveTagChanges
 Exit
 
