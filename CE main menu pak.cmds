@@ -19,7 +19,7 @@ Character MainMenu
 # echo ==Porting...==
 
 
-RunCommands workingdir\main_menu.cmds
+RunCommands workingdir\cmds\main_menu.cmds
 
 
 AddModFiles workingdir\mm_assets
