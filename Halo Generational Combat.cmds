@@ -229,31 +229,38 @@ SaveTagChanges
 Exit
 
 # echo ==Replace shade on sidewinder...==
-edittag custom\levels\multiplayer\sidewinder\sidewinder.scenario
-setfield VehiclePalette[5].Object kashiiera\objects\vehicles\shade_ce\shade_ce.vehicle
-savetagchanges
-exit
+EditTag custom\levels\multiplayer\sidewinder\sidewinder.scenario
+SetField VehiclePalette[5].Object kashiiera\objects\vehicles\shade_ce\shade_ce.vehicle
+SaveTagChanges
+Exit
 
 # echo ==Test out CE Walk and Jump...==
-edittag globals\globals.globals
-setfield PlayerInformation[0].RunForward 2.25
-setfield PlayerInformation[1].RunForward 2.25
-savetagchanges
-exit
-edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
-setfield JumpVelocity 2.7
-savetagchanges
-exit
-edittag objects\characters\elite\mp_elite\mp_elite.biped
-setfield JumpVelocity 2.7
-savetagchanges
-exit
+EditTag globals\globals.globals
+SetField PlayerInformation[0].RunForward 2.25
+SetField PlayerInformation[1].RunForward 2.25
+SaveTagChanges
+Exit
+EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+SetField JumpVelocity 2.7
+SaveTagChanges
+Exit
+EditTag objects\characters\elite\mp_elite\mp_elite.biped
+SetField JumpVelocity 2.7
+SaveTagChanges
+Exit
 
 RunCommands "workingdir\cmds\main_menu.cmds"
 
 OpenModPackage "workingdir\paks\HCECustomization.pak"
 ApplyModPackage
 ExitModPackage
+
+# echo == Change weapons to CE in customization...==
+EditTag levels\ui\mainmenu\mainmenu.scenario
+SetField WeaponPalette[0].Object custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField WeaponPalette[1].Object custom\weapons\hce\hce_pr\hce_pr.weapon
+SaveTagChanges
+Exit
 
 OpenModPackage "workingdir\paks\1999_Emotes v1_5 CUSTOM.pak"
 ApplyModPackage
