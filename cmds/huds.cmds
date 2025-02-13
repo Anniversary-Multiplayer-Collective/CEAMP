@@ -125,12 +125,12 @@ exit
 
 #Remove hud warp
 edittag ui\chud\globals.chud_globals_definition
-setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0,01
+setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0.01
 savetagchanges
 exit
 
 edittag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
-setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0,01
+setfield HudGlobals[0].HudAttributes[0].WarpSourceAspect 0.01
 savetagchanges
 exit
 
@@ -200,3 +200,258 @@ edittag ui\chud\battle_rifle.chud_definition
 setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
 savetagchanges
 exit
+
+# echo ==Biped Huds...==
+EditTag objects\characters\elite\mp_elite\mp_elite.biped
+SetField HudInterfaces[0].UnitHudInterface custom\ui\chud\elite.chud_definition
+SaveTagChanges
+Exit
+
+EditTag objects\characters\masterchief\mp_masterchief\mp_masterchief.biped
+SetField HudInterfaces[0].UnitHudInterface custom\ui\chud\spartan.chud_definition
+SaveTagChanges
+Exit
+
+EditTag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
+SaveTagChanges
+Exit
+
+EditTag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].MotionSensorOrigin 83 993
+SaveTagChanges
+Exit
+
+### Bubble Shield
+##EditTag objects\equipment\bubbleshield_equipment\bubbleshield_equipment.equipment
+##SetField HudInterface custom\ui\chud\e_bubbleshield.chud_definition
+##SaveTagChanges
+##Exit
+##
+### Gravlift
+##EditTag objects\equipment\gravlift_equipment\gravlift_equipment.equipment
+##SetField HudInterface custom\ui\chud\e_gravlift.chud_definition
+##SaveTagChanges
+##Exit
+##
+### Flare
+##EditTag objects\equipment\superflare_equipment\superflare_equipment.equipment
+##SetField HudInterface custom\ui\chud\e_flare.chud_definition
+##SaveTagChanges
+##Exit
+##
+### Bubble Shield
+##EditTag objects\equipment\bubbleshield_equipment\bubbleshield_equipment.equipment
+##SetField HudInterface custom\ui\chud\e_bubbleshield.chud_definition
+##SaveTagChanges
+##Exit
+
+# Rocker Launcher
+EditTag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+SetField HudInterface custom\ui\chud\hce_rocket.chud_definition
+SaveTagChanges
+Exit
+
+# Needler
+EditTag objects\weapons\pistol\needler\needler.weapon
+SetField HudInterface custom\ui\chud\hce_needler.chud_definition
+SetField Magazines[0].RoundsReloaded 20
+SetField Magazines[0].RoundsLoadedMaximum 20
+SaveTagChanges
+Exit
+
+# Sniper Rifle
+EditTag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+SetField HudInterface custom\ui\chud\hce_sniper.chud_definition
+SaveTagChanges
+Exit
+
+# Plasma Pistol
+EditTag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField HudInterface custom\ui\chud\hce_pp.chud_definition
+SaveTagChanges
+Exit
+
+# Plasma Pistol Power
+EditTag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weapon
+SetField HudInterface custom\ui\chud\hce_pp.chud_definition
+SaveTagChanges
+Exit
+
+# Plasma Rifle
+EditTag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField HudInterface custom\ui\chud\hce_pr_test.chud_definition
+SaveTagChanges
+Exit
+
+# Plasma Rifle Power
+EditTag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weapon
+SetField HudInterface custom\ui\chud\hce_pr_test.chud_definition
+SaveTagChanges
+Exit
+
+#Range BR
+EditTag objects\weapons\rifle\battle_rifle_range\battle_rifle_range.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+SaveTagChanges
+Exit
+
+#Rate Of Fire BR
+EditTag objects\weapons\rifle\battle_rifle_rof\battle_rifle_rof.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+SaveTagChanges
+Exit
+
+#SMG
+EditTag objects\weapons\rifle\smg\smg.weapon
+SetField HudInterface custom\ui\chud\hce_ar.chud_definition
+SaveTagChanges
+Exit
+
+#Power SMG
+EditTag objects\weapons\rifle\smg\smg_power.weapon
+SetField HudInterface custom\ui\chud\hce_ar.chud_definition
+SaveTagChanges
+Exit
+
+#Accuracy SMG
+EditTag objects\weapons\rifle\smg\smg_accuracy.weapon
+SetField HudInterface custom\ui\chud\hce_ar.chud_definition
+SaveTagChanges
+Exit
+
+# Fix Plasma Grenade Hud Offset
+EditTag custom\ui\chud\spartan.chud_definition
+SetField HudWidgets[3].PlacementData[0].Offset 67 -9.299999
+SaveTagChanges
+Exit
+
+#Remove hud warp
+EditTag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceAspect 0.01
+SaveTagChanges
+Exit
+
+EditTag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceAspect 0.01
+SaveTagChanges
+Exit
+
+# echo ==Fix Battle Rifle Hud Scaling...=
+EditTag ui\chud\battle_rifle.chud_definition
+SetField HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SaveTagChanges
+Exit
+
+# echo ==Fix Crosshair Scale...=
+EditTag custom\ui\chud\hce_ar.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\hce_aarocket.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+#EditTag custom\ui\chud\hce_fuel.chud_definition
+#SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+#SaveTagChanges
+#Exit
+
+EditTag custom\ui\chud\hce_magnum.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\hce_pp.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\hce_rocket.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\hce_shotgun.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\hce_sniper.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\hce_warthog_mg_turret_detatched.chud_definition
+SetField HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\v_banshee.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag custom\ui\chud\v_ghost.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+EditTag ui\chud\battle_rifle.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SaveTagChanges
+Exit
+
+# echo ==Add Claymore Bitmap...==
+DuplicateTag custom\ui\bitmaps\human_grenade.bitmap custom\ui\bitmaps\claymore_grenade 
+EditTag custom\ui\bitmaps\claymore_grenade.bitmap
+ImportBitmap 0 workingdir\bitmaps\claymore_grenade.dds
+SaveTagChanges
+Exit
+
+# echo ==Add Firebomb Bitmap...==
+DuplicateTag custom\ui\bitmaps\human_grenade.bitmap custom\ui\bitmaps\firebomb_grenade 
+EditTag custom\ui\bitmaps\firebomb_grenade.bitmap
+ImportBitmap 0 workingdir\bitmaps\firebomb_grenade.dds
+SaveTagChanges
+Exit
+
+# echo ==Add Brute Nade to the hud...==
+EditTag custom\ui\chud\spartan.chud_definition
+CopyBlockElements HudWidgets 2 1
+PasteBlockElements HudWidgets
+SetField HudWidgets[19].Name brute_grenade
+SetField HudWidgets[19].PlacementData[0].Anchor GrenadeBrute
+SetField HudWidgets[19].PlacementData[0].Offset 14 -9.299999
+SetField HudWidgets[19].BitmapWidgets[0].StateData[0].UnitMiscState ClaymoreGrenadeSelected
+SetField HudWidgets[19].BitmapWidgets[0].StateData[0].NonWeaponFlashHO ClaymoreEmpty
+SetField HudWidgets[19].TextWidgets[0].StateData[0].UnitMiscState ClaymoreGrenadeSelected
+SetField HudWidgets[19].TextWidgets[0].StateData[0].NonWeaponFlashHO ClaymoreEmpty
+SetField HudWidgets[19].TextWidgets[1].StateData[0].UnitImpulseStateHO GrenadeBrutePickup
+SetField HudWidgets[19].BitmapWidgets[0].Bitmap custom\ui\bitmaps\claymore_grenade.bitmap
+SetField HudWidgets[19].BitmapWidgets[1].StateData[0].UnitMiscState ClaymoreGrenadeSelected
+SetField HudWidgets[19].BitmapWidgets[1].StateData[0].NonWeaponFlashHO ClaymoreEmpty	
+SetField HudWidgets[19].BitmapWidgets[2].StateData[0].NonWeaponFlashHO ClaymoreEmpty
+SetField HudWidgets[19].BitmapWidgets[2].StateData[0].UnitMiscState ClaymoreGrenadeSelected
+SetField HudWidgets[19].BitmapWidgets[0].PlacementData[0].Scale 0.454 0.454
+# echo ==Add Firebomb Nade to the hud...==
+CopyBlockElements HudWidgets 19 1
+PasteBlockElements HudWidgets
+SetField HudWidgets[20].Name firebomb_grenade
+SetField HudWidgets[20].PlacementData[0].Anchor GrenadeFire
+SetField HudWidgets[20].PlacementData[0].Offset -39 -9.299999
+SetField HudWidgets[20].BitmapWidgets[0].StateData[0].UnitMiscState FireGrenadeSelected
+SetField HudWidgets[20].BitmapWidgets[0].StateData[0].NonWeaponFlashHO FirebombEmpty
+SetField HudWidgets[20].TextWidgets[0].StateData[0].UnitMiscState FireGrenadeSelected
+SetField HudWidgets[20].TextWidgets[0].StateData[0].NonWeaponFlashHO FirebombEmpty
+SetField HudWidgets[20].TextWidgets[1].StateData[0].UnitImpulseStateHO GrenadeFirePickup
+SetField HudWidgets[20].BitmapWidgets[0].Bitmap custom\ui\bitmaps\firebomb_grenade.bitmap
+SetField HudWidgets[20].BitmapWidgets[1].StateData[0].UnitMiscState FireGrenadeSelected
+SetField HudWidgets[20].BitmapWidgets[1].StateData[0].NonWeaponFlashHO FirebombEmpty
+SetField HudWidgets[20].BitmapWidgets[2].StateData[0].UnitMiscState FireGrenadeSelected
+SetField HudWidgets[20].BitmapWidgets[2].StateData[0].NonWeaponFlashHO FirebombEmpty
+SetField HudWidgets[20].BitmapWidgets[0].PlacementData[0].Scale 0.454 0.454
+SaveTagChanges
+Exit

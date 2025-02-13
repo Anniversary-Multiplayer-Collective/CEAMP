@@ -1,9 +1,7 @@
 Invisible ceiling barrier is too low on battle creek
-Hud icon for fire and spike grenade
 Fix Godrays on Gephy Its the emissive bloom https://s.zekken.rocks/a6Dx8E1Z.jpg
 Sprint Animations
 Fix Health Packs
-Make Health not regenerate?
 Fix equipment HUD, most are missing the custom hud and also it doesnt show if you replce the chud either
 Make huds for other weapons
 Add sprint meter on HUD, Maybe Ramps?
