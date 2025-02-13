@@ -1,9 +1,9 @@
-"C:\ElDewrito\maps\tags.dat"
+"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps\tags.dat"
 
 # echo ==Set Variables...==
-SetVariable workingdir "G:\Projects\Halo-Generational-Combat"
-SetVariable modsfolder "C:\ElDewrito\mods"
-SetVariable workshop "G:\SteamLibrary\steamapps\workshop\content\976730\2962955878"
+SetVariable workingdir "C:\Users\zekken\Desktop\Halo-Generational-Combat"
+SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
+SetVariable workshop "F:\SteamLibrary\steamapps\workshop\content\976730\2962955878"
 
 # echo ==Set Caches...==
 UseAudioCache "workingdir\caches\audiocache"
