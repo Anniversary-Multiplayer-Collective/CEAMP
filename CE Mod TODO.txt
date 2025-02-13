@@ -1,5 +1,5 @@
 Invisible ceiling barrier is too low on battle creek
-Fix Godrays on Gephy https://s.zekken.rocks/a6Dx8E1Z.jpg
+Fix Godrays on Gephy Its the emissive bloom https://s.zekken.rocks/a6Dx8E1Z.jpg
 Sprint Animations
 Fix Health Packs
 Fix equipment HUD, most are missing the custom hud and also it doesnt show if you replce the chud either
