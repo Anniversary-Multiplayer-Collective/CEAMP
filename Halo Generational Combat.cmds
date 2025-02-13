@@ -1,9 +1,9 @@
-"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps\tags.dat"
+"C:\ElDewrito\maps\tags.dat"
 
 # echo ==Set Variables...==
-SetVariable workingdir "C:\Users\zekken\Desktop\Halo-Generational-Combat"
-SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
-SetVariable workshop "F:\SteamLibrary\steamapps\workshop\content\976730\2962955878"
+SetVariable workingdir "G:\Projects\Halo-Generational-Combat"
+SetVariable modsfolder "C:\ElDewrito\mods"
+SetVariable workshop "G:\SteamLibrary\steamapps\workshop\content\976730\2962955878"
 
 # echo ==Set Caches...==
 UseAudioCache "workingdir\caches\audiocache"
@@ -268,32 +268,32 @@ ExitModPackage
 DeleteModFiles
 
 # echo ==Set podium weapons to CE variants...==
-edittag multiplayer\multiplayer_globals.multiplayer_globals
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-setfield Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-setfield Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-savetagchanges
+EditTag multiplayer\multiplayer_globals.multiplayer_globals
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SaveTagChanges
 Exit
 
 RunCommands "workingdir\cmds\weaponglobals.cmds"
