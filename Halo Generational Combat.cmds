@@ -1,9 +1,9 @@
-"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps\tags.dat"
+D:\eldewrito\eldewrito 0.7\ElDewrito\maps
 
 # echo ==Set Variables...==
-SetVariable workingdir "C:\Users\zekken\Desktop\Halo-Generational-Combat"
-SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
-SetVariable workshop "F:\SteamLibrary\steamapps\workshop\content\976730\2962955878"
+SetVariable workingdir ""
+SetVariable modsfolder ""
+SetVariable workshop ""
 
 # echo ==Set Caches...==
 UseAudioCache "workingdir\caches\audiocache"
@@ -11,9 +11,9 @@ UseShaderCache "workingdir\caches\shadercache"
 
 # echo ==Creating Mod Package...==
 CreateModPackage 1 large
-Halo Generational Combat
+Halo Combat Evolved Aniversary Multiplayer
 This is a mod that ports all of Halo: Combat Evolved into Eldewrito, with the goal of keeping true to the original as much as possible whilst updating visuals & gameplay mechanics to fit a perfect balance between old and new, such as CE vehicles being able to be destroyed & having damage states, and modified halo 3 equipment thrown into the Halo: Combat Evolved sandbox.
-Drksteel, Zekken
+AMP Collective, Drksteel
 0.1
 Multiplayer Character MainMenu
 
@@ -21,7 +21,45 @@ RunCommands "workingdir\cmds\preport.cmds"
 
 # echo ==Porting...==
 
-OpenCacheFile "workshop\maps\beavercreek.map"
+OpenCacheFile "workshop\maps\bloodgulch.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+porttag replace objects\weapons\pistol\magnum\magnum.weap
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+porttag replace objects\weapons\turret\flamethrower\flamethrower.weap
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+porttag replace objects\weapons\pistol\needler\needler.weap
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+porttag replace objects\weapons\pistol\plasma_pistol\plasma_pistol.weap
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+porttag replace objects\weapons\rifle\plasma_rifle\plasma_rifle.weap
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+porttag replace objects\weapons\rifle\shotgun\shotgun.weap
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+porttag replace objects\weapons\rifle\sniper_rifle\sniper_rifle.weap
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+porttag replace objects\weapons\melee\energy_blade\energy_blade.weap
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+porttag replace objects\weapons\rifle\assault_rifle\assault_rifle.weap
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+porttag replace objects\weapons\support_high\flak_cannon\flak_cannon.weap
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+porttag replace objects\weapons\rifle\battle_rifle\battle_rifle.weap
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+porttag replace objects\weapons\support_high\rocket_launcher\rocket_launcher.weap
+
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+porttag replace objects\vehicles\ghost\ghost.vehi
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+porttag replace objects\vehicles\shade\shade.vehi
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+porttag replace objects\vehicles\banshee\banshee.vehi
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+porttag replace objects\vehicles\scorpion\scorpion.vehi
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle objects\vehicles\warthog\warthog
+porttag replace objects\vehicles\warthog\warthog.vehi
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith
+porttag replace objects\vehicles\wraith\wraith.vehi
+
 PortTag !UpdateMapFiles *.scnr
 PortTag custom\ui\chud\elite.chud_definition
 PortTag custom\ui\chud\e_bubbleshield.chud_definition
@@ -32,87 +70,486 @@ PortTag custom\weapons\hce\hce_frag\frag_grenade.projectile
 PortTag custom\weapons\hce\hce_plasma\plasma_grenade.projectile
 Exit
 
-OpenCacheFile "workshop\maps\bloodgulch.map"
+OpenCacheFile "workshop\maps\beavercreek.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\boardingaction.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\chillout.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\damnation.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\danger_canyon.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\death_island.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\derelict.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\extinction.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\gephyrophobia.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\hangemhigh.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\icefields.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\infinity.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\longest.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\prisoner.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\putput.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\ratrace.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\sidewinder.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\timberland.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\tutorial.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\wizard.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
 OpenCacheFile "workshop\maps\yoyoisland.map"
+nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
+nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
+nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
+nameblamtag custom\weapons\hce\hce_pr\hce_pr.weapon objects\weapons\rifle\plasma_rifle\plasma_rifle
+nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rifle\shotgun\shotgun
+nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
+nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
+nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
+nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
+nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
+nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
+nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
+nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
+
 PortTag !UpdateMapFiles *.scnr
 Exit
 
@@ -313,6 +750,6 @@ UpdateMapFiles "workshop"
 
 AddModFiles "workingdir\assets"
 
-SaveModPackage
+SaveModPackage "modsfolder\CEAMP"
 
 DumpLog "workingdir\logs"
