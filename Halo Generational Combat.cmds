@@ -1,9 +1,7 @@
 D:\eldewrito\eldewrito 0.7\ElDewrito\maps
-
-# echo ==Set Variables...==
-SetVariable workingdir ""
-SetVariable modsfolder ""
-SetVariable workshop ""
+SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\CEAMP"
+SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
+SetVariable workshop "D:\Games\steamapps\workshop\content\976730\2962955878"
 
 # echo ==Set Caches...==
 UseAudioCache "workingdir\caches\audiocache"
@@ -104,15 +102,7 @@ nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifl
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
-nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
-nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
-nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
-nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
-nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
-nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
-nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
-
 PortTag !UpdateMapFiles *.scnr
 Exit
 
@@ -127,15 +117,7 @@ nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifl
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
-nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
-nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
-nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
-nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
-nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
-nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
-nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
-
 PortTag !UpdateMapFiles *.scnr
 Exit
 
@@ -199,7 +181,7 @@ nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
-nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
+
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
 nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
 nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
@@ -219,14 +201,7 @@ nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifl
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
-nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
-nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
-nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
-nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
-nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
-nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
-nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
 
 PortTag !UpdateMapFiles *.scnr
 Exit
@@ -359,12 +334,6 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
-nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
-nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
-nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
-nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
-nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
-nameblamtag custom\vehicles\tgof_hce_wraith\tgof_hce_wraith.vehicle objects\vehicles\wraith\wraith.vehicle
 
 PortTag !UpdateMapFiles *.scnr
 Exit
@@ -472,7 +441,6 @@ nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifl
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
-nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
@@ -694,8 +662,8 @@ ExitModPackage
 
 # echo == Change weapons to CE in customization...==
 EditTag levels\ui\mainmenu\mainmenu.scenario
-SetField WeaponPalette[0].Object custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField WeaponPalette[1].Object custom\weapons\hce\hce_pr\hce_pr.weapon
+SetField WeaponPalette[0].Object objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField WeaponPalette[1].Object objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
 SaveTagChanges
 Exit
 
@@ -706,30 +674,30 @@ DeleteModFiles
 
 # echo ==Set podium weapons to CE variants...==
 EditTag multiplayer\multiplayer_globals.multiplayer_globals
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomPrimaryWeapon custom\weapons\hce\hce_pr\hce_pr.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
-SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapon custom\weapons\hce\hce_pp\hce_pp.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomSecondaryWeapon objects\weapons\pistol\magnum\magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomPrimaryWeapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[1].CustomSecondaryWeapon objects\weapons\pistol\magnum\magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomSecondaryWeapon objects\weapons\pistol\magnum\magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomSecondaryWeapon objects\weapons\pistol\magnum\magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomSecondaryWeapon objects\weapons\pistol\magnum\magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomSecondaryWeapon objects\weapons\pistol\magnum\magnum.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[2].CustomPrimaryWeapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[3].CustomPrimaryWeapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[4].CustomPrimaryWeapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField Universal[0].PodiumAnimations[0].MoveAnimations[5].CustomPrimaryWeapon objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomPrimaryWeapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomPrimaryWeapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomPrimaryWeapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomPrimaryWeapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomPrimaryWeapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomPrimaryWeapon objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[0].CustomSecondaryWeapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[1].CustomSecondaryWeapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[2].CustomSecondaryWeapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[3].CustomSecondaryWeapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[4].CustomSecondaryWeapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapon objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
 SaveTagChanges
 Exit
 

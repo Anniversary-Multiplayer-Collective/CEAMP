@@ -95,7 +95,7 @@ setfield InheritanceList[0].RootZOffset 1.2
 SaveTagChanges
 Exit
 
-edittag custom\weapons\hce\hce_shotty\hce_shotgun.weapon
+edittag objects\weapons\rifle\shotgun\shotgun.weapon
 setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
 SaveTagChanges
 Exit

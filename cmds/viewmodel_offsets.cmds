@@ -46,7 +46,7 @@ Exit
 
 # Weapon Assignments
 
-EditTag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon
+EditTag objects\weapons\rifle\assault_rifle\assault_rifle.weapon
 SetField WeaponTypeName OFFSET_HCE_AR
 SetField CenteredFirstPersonWeaponOffset 0.047 -0.001 0
 SaveTagChanges
@@ -58,7 +58,7 @@ SetField CenteredFirstPersonWeaponOffset 0.047 -0.001 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon
+EditTag objects\weapons\pistol\magnum\magnum.weapon
 SetField WeaponTypeName OFFSET_HCE_MAGNUM
 SetField CenteredFirstPersonWeaponOffset 0.048 0 0
 SaveTagChanges
@@ -70,13 +70,13 @@ SetField CenteredFirstPersonWeaponOffset 0.048 0 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_pp\hce_pp.weapon
+EditTag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
 SetField WeaponTypeName OFFSET_HCE_PP
 SetField CenteredFirstPersonWeaponOffset 0.039 0 -0.008
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_pr\hce_pr.weapon
+EditTag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
 SetField WeaponTypeName OFFSET_HCE_PR
 SetField CenteredFirstPersonWeaponOffset 0.074 0 0
 SaveTagChanges
@@ -88,13 +88,13 @@ SetField CenteredFirstPersonWeaponOffset 0.074 0 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_needler\hce_needler.weapon
+EditTag objects\weapons\pistol\needler\needler.weapon
 SetField WeaponTypeName OFFSET_HCE_NEEDLER
 SetField CenteredFirstPersonWeaponOffset 0.023 -0.011 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_shotty\hce_shotgun.weapon
+EditTag objects\weapons\rifle\shotgun\shotgun.weapon
 SetField WeaponTypeName OFFSET_HCE_SHOTTY
 SetField CenteredFirstPersonWeaponOffset 0.047 -0.01 0
 SaveTagChanges
@@ -106,24 +106,24 @@ SetField WeaponTypeName OFFSET_HCE_SHOTTY_GOLD
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle.weapon
 SetField WeaponTypeName OFFSET_H2_BR
 SetField CenteredFirstPersonWeaponOffset 0.022 0 -0.004
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_sniper\hce_sniper.weapon
+EditTag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
 SetField WeaponTypeName OFFSET_HCE_SNIPER
 SetField CenteredFirstPersonWeaponOffset 0.032 0 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_sword\hce_sword.weapon
+EditTag objects\weapons\melee\energy_blade\energy_blade.weapon
 SetField WeaponTypeName OFFSET_HCE_SWORD
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon
+EditTag objects\weapons\turret\flamethrower\flamethrower.weapon
 SetField WeaponTypeName OFFSET_HCE_FLAMER
 SaveTagChanges
 Exit
@@ -134,7 +134,7 @@ SetField WeaponTypeName OFFSET_HUNTER_CANNON
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon
+EditTag objects\weapons\support_high\flak_cannon\flak_cannon.weapon
 SetField WeaponTypeName OFFSET_FUEL_ROD_GUN
 SetField CenteredFirstPersonWeaponOffset 0.019 0 0
 SaveTagChanges
@@ -150,7 +150,7 @@ SetField WeaponTypeName OFFSET_WARTHOG_ROCKET_TURRET
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon
+EditTag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
 SetField WeaponTypeName OFFSET_HCE_ROCKETLAUNCHER
 SetField CenteredFirstPersonWeaponOffset 0.016 0 0
 SaveTagChanges
