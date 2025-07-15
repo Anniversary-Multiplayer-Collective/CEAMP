@@ -711,6 +711,8 @@ RunCommands "workingdir\cmds\camera_positions.cmds"
 
 RunCommands "workingdir\cmds\sprintanimations.cmds"
 
+RunCommands "workingdir\cmds\ForgePalette.cmds"
+
 # echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
 cs < "workingdir\WeaponWaterFix.cs"
 

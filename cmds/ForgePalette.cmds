@@ -1,0 +1,6 @@
+
+
+#Vehicles
+AddForgeItem "Rocket Hog" 79 custom\vehicles\tgof_hce_new_rwarthog\tgof_hce_new_rwarthog.vehicle
+AddForgeItem "Dew Hog" 79 custom\vehicles\tgof_hce_dewhog\tgof_hce_dewhog.vehicle
+
