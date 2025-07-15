@@ -476,6 +476,34 @@ SetField HudGlobals[0].HudAttributes[6].WarpSourceFovY 1
 SetField HudGlobals[0].HudAttributes[6].WarpSourceAspect 1
 SetField HudGlobals[0].HudAttributes[7].WarpSourceFovY 1
 SetField HudGlobals[0].HudAttributes[7].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[1].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[1].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[2].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[2].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[3].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[3].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[4].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[4].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[5].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[5].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[6].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[6].WarpSourceAspect 1
+SetField HudGlobals[1].HudAttributes[7].WarpSourceFovY 1
+SetField HudGlobals[1].HudAttributes[7].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[1].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[1].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[2].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[2].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[3].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[3].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[4].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[4].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[5].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[5].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[6].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[6].WarpSourceAspect 1
+SetField HudGlobals[2].HudAttributes[7].WarpSourceFovY 1
+SetField HudGlobals[2].HudAttributes[7].WarpSourceAspect 1
 savetagchanges
 exit
 
