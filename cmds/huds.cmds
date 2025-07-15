@@ -142,62 +142,62 @@ Exit
 
 # echo ==Fix Crosshair Scale...=
 edittag custom\ui\chud\hce_ar.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\hce_aarocket.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 #edittag custom\ui\chud\hce_fuel.chud_definition
-#setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+#setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 #savetagchanges
 #exit
 
 edittag custom\ui\chud\hce_magnum.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\hce_pp.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\hce_rocket.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\hce_shotgun.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\hce_sniper.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\hce_warthog_mg_turret_detatched.chud_definition
-setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\v_banshee.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag custom\ui\chud\v_ghost.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
 edittag ui\chud\battle_rifle.chud_definition
-setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+setfield HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 savetagchanges
 exit
 
@@ -345,62 +345,62 @@ Exit
 
 # echo ==Fix Crosshair Scale...=
 EditTag custom\ui\chud\hce_ar.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\hce_aarocket.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 #EditTag custom\ui\chud\hce_fuel.chud_definition
-#SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+#SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 #SaveTagChanges
 #Exit
 
 EditTag custom\ui\chud\hce_magnum.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\hce_pp.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\hce_rocket.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\hce_shotgun.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\hce_sniper.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\hce_warthog_mg_turret_detatched.chud_definition
-SetField HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\v_banshee.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag custom\ui\chud\v_ghost.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
 EditTag ui\chud\battle_rifle.chud_definition
-SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 1 1
 SaveTagChanges
 Exit
 
