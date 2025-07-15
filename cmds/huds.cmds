@@ -455,3 +455,49 @@ SetField HudWidgets[20].BitmapWidgets[2].StateData[0].NonWeaponFlashHO FirebombE
 SetField HudWidgets[20].BitmapWidgets[0].PlacementData[0].Scale 0.454 0.454
 SaveTagChanges
 Exit
+
+echo fix hud stutter
+
+EditTag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[0].WarpDestinationOffsetZ -0.95
+SetField HudGlobals[0].HudAttributes[0].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[1].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[1].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[2].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[2].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[3].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[3].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[4].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[4].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[5].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[5].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[6].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[6].WarpSourceAspect 1
+SetField HudGlobals[0].HudAttributes[7].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[7].WarpSourceAspect 1
+savetagchanges
+exit
+
+echo crosshair for sword
+
+edittag ui\chud\sword.chud_definition
+CopyBlockElements HudWidgets 3 1
+exit
+
+Edittag custom\ui\chud\hce_sword.chud_definition
+PasteBlockElements HudWidgets 1
+savetagchanges
+exit
+
+Edittag objects\weapons\melee\energy_blade\energy_blade.weapon
+SetField SecondaryWeaponFlags None
+savetagchanges
+exit
+
+
+
+
+
+
+

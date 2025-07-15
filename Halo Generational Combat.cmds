@@ -701,6 +701,19 @@ SetField Universal[0].PodiumAnimations[1].MoveAnimations[5].CustomSecondaryWeapo
 SaveTagChanges
 Exit
 
+echo Weapon shader fixes
+
+edittag custom\weapons\hce\tgof_hce_sword\shaders\es_blade_top.shader
+SetArgument self_illum_color 0.015 0.05 0.05 1
+savetagchanges
+Exit
+
+EditTag custom\weapons\hce\tgof_hce_magnum\shaders\silver.shader
+SetArgument environment_map_specular_contribution 0.75
+savetagchanges
+exit
+
+
 RunCommands "workingdir\cmds\weaponglobals.cmds"
 
 RunCommands "workingdir\cmds\huds.cmds"
