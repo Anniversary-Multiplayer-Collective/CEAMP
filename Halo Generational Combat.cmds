@@ -44,6 +44,16 @@ nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon object
 porttag replace objects\weapons\rifle\battle_rifle\battle_rifle.weap
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
 porttag replace objects\weapons\support_high\rocket_launcher\rocket_launcher.weap
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+porttag replace objects\weapons\grenade\plasma_grenade\plasma_grenade.equipment
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+porttag replace objects\weapons\grenade\frag_grenade\frag_grenade.equipment
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+porttag replace objects\multi\powerups\powerup_red\powerup_red.equipment
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
+porttag replace objects\multi\powerups\powerup_blue\powerup_blue.equipment
+
+
 
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 porttag replace objects\vehicles\ghost\ghost.vehi
@@ -81,6 +91,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -103,6 +117,10 @@ nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 PortTag !UpdateMapFiles *.scnr
 Exit
 
@@ -118,6 +136,10 @@ nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 PortTag !UpdateMapFiles *.scnr
 Exit
 
@@ -134,6 +156,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -157,6 +183,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -180,8 +210,11 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
-
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
 nameblamtag custom\vehicles\tgof_hce_scorpion\hce_scorpion.vehicle objects\vehicles\scorpion\scorpion
 nameblamtag custom\vehicles\tgof_hce_warthog\warthog.vehicle custom\vehicles\tgof_hce_warthog\warthog
@@ -202,6 +235,10 @@ nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 
 PortTag !UpdateMapFiles *.scnr
 Exit
@@ -219,6 +256,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -242,6 +283,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -265,6 +310,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -288,6 +337,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -311,6 +364,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -334,6 +391,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 
 PortTag !UpdateMapFiles *.scnr
 Exit
@@ -351,6 +412,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -374,6 +439,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -397,6 +466,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -420,6 +493,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -442,6 +519,10 @@ nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -465,6 +546,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -488,6 +573,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
@@ -511,6 +600,10 @@ nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
+nameblamtag custom\weapons\hce\hce_plasma\plasma_grenade.equipment objects\weapons\grenade\plasma_grenade\plasma_grenade
+nameblamtag custom\weapons\hce\hce_frag\frag_grenade.equipment objects\weapons\grenade\frag_grenade\frag_grenade
+nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\multi\powerups\powerup_red\powerup_red
+nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
 nameblamtag custom\vehicles\hce_shade\hce_shade.vehicle objects\vehicles\shade\shade
 nameblamtag custom\vehicles\tgof_hce_banshee\hce_banshee.vehicle objects\vehicles\banshee\banshee
