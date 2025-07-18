@@ -245,3 +245,248 @@ SetArgument self_illum_color 1 0.4 0 1
 SetArgument self_illum_intensity 5
 savetagchanges
 exit
+
+
+	echo Battle Rifle
+	echo green
+	
+Duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
+nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_green
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_green
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+nametag * custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_green
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_green
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_green
+savetagnames
+
+edittag objects\weapons\rifle\battle_rifle_accuracy\battle_rifle_accuracy.weapon
+SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_green.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_green.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_green.model
+SetField RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_green.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_green.render_model
+SetField Materials[3].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_green.shader
+SetField Materials[5].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_green.shader
+SetField Materials[6].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_green.shader
+savetagchanges
+exit
+
+EditTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_green.shader
+SetArgument specular_tint 0.227451 1 0.227451 1
+SetArgument env_tint_color 0.16078432 1 0.25490198 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_green.shader
+SetArgument self_illum_color 0 1 0 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_green.shader
+SetArgument self_illum_color 0 1 0 1
+savetagchanges
+exit
+
+	echo blue
+	
+Duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
+nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_blue
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_blue
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+nametag * custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_blue
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_blue
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_blue
+savetagnames
+
+edittag objects\weapons\rifle\battle_rifle_ammo\battle_rifle_ammo.weapon
+SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_blue.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_blue.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_blue.model
+SetField RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_blue.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_blue.render_model
+SetField Materials[3].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_blue.shader
+SetField Materials[5].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_blue.shader
+SetField Materials[6].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_blue.shader
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_blue.shader
+SetArgument self_illum_color 0 0 1 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_blue.shader
+SetArgument self_illum_color 0 0 1 1
+savetagchanges
+exit
+
+	echo red
+	
+Duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
+nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_red
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_red
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+nametag * custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_red
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_red
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_red
+savetagnames
+
+edittag objects\weapons\rifle\battle_rifle_damage\battle_rifle_damage.weapon
+SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_red.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_red.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_red.model
+SetField RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_red.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_red.render_model
+SetField Materials[2].RenderMethod null
+SetField Materials[3].RenderMethod null
+SetField Materials[5].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_red.shader
+SetField Materials[6].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_red.shader
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_red.shader
+SetArgument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_red.shader
+SetArgument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+	echo purple
+	
+Duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
+nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_purple
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_purple
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+nametag * custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_purple
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_purple
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_purple
+savetagnames
+
+edittag objects\weapons\rifle\battle_rifle_range\battle_rifle_range.weapon
+SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_purple.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_purple.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_purple.model
+SetField RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_purple.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_purple.render_model
+SetField Materials[3].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_purple.shader
+SetField Materials[5].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_purple.shader
+SetField Materials[6].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_purple.shader
+savetagchanges
+exit
+
+EditTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_purple.shader
+SetArgument specular_tint 1 0 1 1
+SetArgument env_tint_color 1 0 1 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_purple.shader
+SetArgument self_illum_color 1 0 1 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_purple.shader
+SetArgument self_illum_color 1 0 1 1
+savetagchanges
+exit
+
+	echo yellow
+	
+Duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
+nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_yellow
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_yellow
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+nametag * custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_yellow
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_yellow
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones.shader
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_yellow
+savetagnames
+
+edittag objects\weapons\rifle\battle_rifle_rof\battle_rifle_rof.weapon
+SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_yellow.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_yellow.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_yellow.model
+SetField RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_yellow.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_yellow.render_model
+SetField Materials[3].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_yellow.shader
+SetField Materials[5].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_yellow.shader
+SetField Materials[6].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_yellow.shader
+savetagchanges
+exit
+
+EditTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens_yellow.shader
+SetArgument specular_tint 1 1 0 1
+SetArgument env_tint_color 1 1 0 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\tens_yellow.shader
+SetArgument self_illum_color 1 1 0 1
+savetagchanges
+exit
+
+Edittag custom\weapons\other\tgof_h2_battle_rifle\shaders\ones_yellow.shader
+SetArgument self_illum_color 1 1 0 1
+savetagchanges
+exit
+
+echo gold
+
+
