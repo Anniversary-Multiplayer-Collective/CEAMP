@@ -487,6 +487,69 @@ SetArgument self_illum_color 1 1 0 1
 savetagchanges
 exit
 
-echo gold
+	echo gold
+	
+Duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
+nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_gold
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
+NameTag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_spec
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\color_mask_map.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_color_mask
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\material_texture.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_material
+savetagnames
+
+
+edittag objects\weapons\rifle\battle_rifle_power\battle_rifle_power.weapon
+SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_gold.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_gold.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_gold.model
+SetField RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_gold.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_gold.render_model
+SetField Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_spec.bitmap
+Importbitmap 0 workingdir\bitmaps\WepVariants\BR\Gold\spec_pwr.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_color_mask.bitmap
+Importbitmap 0 workingdir\bitmaps\WepVariants\BR\Gold\color_mask.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_material.bitmap
+Importbitmap 0 workingdir\bitmaps\WepVariants\BR\Gold\material__pwr.dds
+exit
+
+Edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold.shader
+SetField ShaderProperties[0].TextureConstants[0].Bitmap custom\weapons\other\tgof_h2_battle_rifle\bitmaps\battle_rifle.bitmap
+SetField ShaderProperties[0].TextureConstants[2].Bitmap objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_color_mask.bitmap
+SetField ShaderProperties[0].TextureConstants[3].Bitmap custom\weapons\other\tgof_h2_battle_rifle\bitmaps\battle_rifle_bump.bitmap
+SetField ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_spec.bitmap
+SetField ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold_material.bitmap
+SetArgument specular_tint 3 3 3 1
+SetArgument specular_coefficient 2
+savetagchanges
+exit
+
+
+
+
+
+
 
 
