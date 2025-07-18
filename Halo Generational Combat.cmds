@@ -22,6 +22,8 @@ RunCommands "workingdir\cmds\preport.cmds"
 OpenCacheFile "workshop\maps\bloodgulch.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
 porttag replace objects\weapons\pistol\magnum\magnum.weap
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
+porttag replace objects\weapons\pistol\magnum\magnum_power.weap
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 porttag replace objects\weapons\turret\flamethrower\flamethrower.weap
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
@@ -38,6 +40,8 @@ nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\
 porttag replace objects\weapons\melee\energy_blade\energy_blade.weap
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
 porttag replace objects\weapons\rifle\assault_rifle\assault_rifle.weap
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
+porttag replace objects\weapons\rifle\assault_rifle_power\assault_rifle_power.weap
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 porttag replace objects\weapons\support_high\flak_cannon\flak_cannon.weap
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
@@ -52,7 +56,6 @@ nameblamtag custom\powerups\hce_overshield\hce_overshield.equipment objects\mult
 porttag replace objects\multi\powerups\powerup_red\powerup_red.equipment
 nameblamtag custom\powerups\hce_camo\hce_camo.equipment objects\multi\powerups\powerup_blue\powerup_blue
 porttag replace objects\multi\powerups\powerup_blue\powerup_blue.equipment
-
 
 
 nameblamtag custom\vehicles\hce_ghost\hce_ghost.vehicle objects\vehicles\ghost\ghost
@@ -80,6 +83,7 @@ Exit
 
 OpenCacheFile "workshop\maps\beavercreek.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -88,6 +92,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -145,6 +150,7 @@ Exit
 
 OpenCacheFile "workshop\maps\damnation.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -153,6 +159,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -172,6 +179,7 @@ Exit
 
 OpenCacheFile "workshop\maps\danger_canyon.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -180,6 +188,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -245,6 +254,7 @@ Exit
 
 OpenCacheFile "workshop\maps\extinction.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -253,6 +263,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -272,6 +283,7 @@ Exit
 
 OpenCacheFile "workshop\maps\gephyrophobia.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -280,6 +292,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -299,6 +312,7 @@ Exit
 
 OpenCacheFile "workshop\maps\hangemhigh.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -307,6 +321,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -326,6 +341,7 @@ Exit
 
 OpenCacheFile "workshop\maps\icefields.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -334,6 +350,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -353,6 +370,7 @@ Exit
 
 OpenCacheFile "workshop\maps\infinity.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -361,6 +379,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -401,6 +420,7 @@ Exit
 
 OpenCacheFile "workshop\maps\prisoner.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -409,6 +429,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -428,6 +449,7 @@ Exit
 
 OpenCacheFile "workshop\maps\putput.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -436,6 +458,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -455,6 +478,7 @@ Exit
 
 OpenCacheFile "workshop\maps\ratrace.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -463,6 +487,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -482,6 +507,7 @@ Exit
 
 OpenCacheFile "workshop\maps\sidewinder.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -490,6 +516,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -535,6 +562,7 @@ Exit
 
 OpenCacheFile "workshop\maps\tutorial.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -543,6 +571,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -562,6 +591,7 @@ Exit
 
 OpenCacheFile "workshop\maps\wizard.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -570,6 +600,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -589,6 +620,7 @@ Exit
 
 OpenCacheFile "workshop\maps\yoyoisland.map"
 nameblamtag custom\weapons\hce\tgof_hce_magnum\hce_magnum.weapon objects\weapons\pistol\magnum\magnum
+nameblamtag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon objects\weapons\pistol\magnum\magnum_power
 nameblamtag custom\weapons\hce\hce_flamethrower\hce_flamethrower.weapon objects\weapons\turret\flamethrower\flamethrower
 nameblamtag custom\weapons\hce\hce_needler\hce_needler.weapon objects\weapons\pistol\needler\needler
 nameblamtag custom\weapons\hce\hce_pp\hce_pp.weapon objects\weapons\pistol\plasma_pistol\plasma_pistol
@@ -597,6 +629,7 @@ nameblamtag custom\weapons\hce\hce_shotty\hce_shotgun.weapon objects\weapons\rif
 nameblamtag custom\weapons\hce\hce_sniper\hce_sniper.weapon objects\weapons\rifle\sniper_rifle\sniper_rifle
 nameblamtag custom\weapons\hce\hce_sword\hce_sword.weapon objects\weapons\melee\energy_blade\energy_blade
 nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\hce_ar.weapon objects\weapons\rifle\assault_rifle\assault_rifle
+nameblamtag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon objects\weapons\rifle\assault_rifle_power\assault_rifle_power
 nameblamtag custom\weapons\hce\tgof_hce_fuel_rod\hce_fuel.weapon objects\weapons\support_high\flak_cannon\flak_cannon
 nameblamtag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.weapon objects\weapons\rifle\battle_rifle\battle_rifle
 nameblamtag custom\weapons\hce\tgof_hce_rpg\hce_rockets.weapon objects\weapons\support_high\rocket_launcher\rocket_launcher
@@ -818,6 +851,8 @@ RunCommands "workingdir\cmds\camera_positions.cmds"
 RunCommands "workingdir\cmds\sprintanimations.cmds"
 
 RunCommands "workingdir\cmds\ForgePalette.cmds"
+
+RunCommands "workingdir\cmds\WeaponVariants.cmds"
 
 # echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
 cs < "workingdir\WeaponWaterFix.cs"

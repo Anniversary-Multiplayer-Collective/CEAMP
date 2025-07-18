@@ -1,0 +1,247 @@
+
+echo assault rifle
+echo green
+
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle.model
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_green
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\fp\fp.render_model
+NameTag * custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_green
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_green
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse.bitmap
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_green
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_green
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_green
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_green
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_green
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_green
+savetagnames
+
+edittag objects\weapons\rifle\assault_rifle_accuracy\assault_rifle_accuracy.weapon
+SetField Model custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_green.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_green.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\hce\tgof_hce_assault_rifle\fp\fp.model_animation_graph
+SetField HudInterface custom\ui\chud\hce_ar.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_green.model
+SetField RenderModel custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_green.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_green.mode
+SetField Materials[1].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_green.shader
+SetField Materials[3].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_green.shader
+SetField Materials[4].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_green.shader
+SetField Materials[5].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_green.shader
+SetField Materials[6].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_green.shader
+SetField Materials[7].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_green.shader
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_green.shader
+SetField ShaderProperties[0].TextureConstants[0].Bitmap custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_green.bitmap
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_green.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\AR\Green\ar_diffuse_green.dds
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_green.shader
+SetArgument self_illum_color 0.25 1 0.25 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_green.shader
+SetArgument self_illum_color 0.25 1 0.25 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_green.shader
+SetArgument self_illum_color 0 1 0 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_green.shader
+SetArgument self_illum_color 0.25 1 0.25 1
+SetArgument albedo_color 1 2 1 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_green.shader
+SetArgument self_illum_color 0 1 0 1
+savetagchanges
+exit
+
+echo red
+
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle.model
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_red
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\fp\fp.render_model
+NameTag * custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_red
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_red
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse.bitmap
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_red
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_red
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_red
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_red
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_red
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_red
+savetagnames
+
+
+edittag objects\weapons\rifle\assault_rifle_damage\assault_rifle_damage.weapon
+SetField Model custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_red.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_red.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\hce\tgof_hce_assault_rifle\fp\fp.model_animation_graph
+SetField HudInterface custom\ui\chud\hce_ar.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_red.model
+SetField RenderModel custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_red.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_red.mode
+SetField Materials[1].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_red.shader
+SetField Materials[3].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_red.shader
+SetField Materials[4].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_red.shader
+SetField Materials[5].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_red.shader
+SetField Materials[6].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_red.shader
+SetField Materials[7].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_red.shader
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_red.shader
+SetField ShaderProperties[0].TextureConstants[0].Bitmap custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_red.bitmap
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_red.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\AR\red\ar_diffuse_red.dds
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_red.shader
+SetArgument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_red.shader
+SetArgument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_red.shader
+SetArgument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_red.shader
+SetArgument self_illum_color 1 0 0 1
+SetArgument albedo_color 5 0 0 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_red.shader
+SetArgument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+echo yellow
+
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle.model
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_yellow
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\fp\fp.render_model
+NameTag * custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_yellow
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_yellow
+Duplicatetag custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse.bitmap
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_yellow
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_yellow
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_yellow
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_yellow
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_yellow
+DuplicateTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear.shader
+nametag * custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_yellow
+savetagnames
+
+
+edittag objects\weapons\rifle\assault_rifle_rof\assault_rifle_rof.weapon
+SetField Model custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_yellow.model
+SetField FirstPerson[0].FirstPersonModel custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_yellow.render_model
+SetField FirstPerson[0].FirstPersonAnimations custom\weapons\hce\tgof_hce_assault_rifle\fp\fp.model_animation_graph
+SetField HudInterface custom\ui\chud\hce_ar.chud_definition
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\assault_rifle_yellow.model
+SetField RenderModel custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_yellow.render_model
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\fp\fp_yellow.mode
+SetField Materials[1].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_yellow.shader
+SetField Materials[3].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_yellow.shader
+SetField Materials[4].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_yellow.shader
+SetField Materials[5].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_yellow.shader
+SetField Materials[6].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_yellow.shader
+SetField Materials[7].RenderMethod custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_yellow.shader
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\shaders\gun_yellow.shader
+SetField ShaderProperties[0].TextureConstants[0].Bitmap custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_yellow.bitmap
+savetagchanges
+exit
+
+edittag custom\weapons\hce\tgof_hce_assault_rifle\bitmaps\pbr\ar_diffuse_yellow.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\AR\yellow\ar_diffuse_yellow.dds
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\ones_yellow.shader
+SetArgument self_illum_color 1 0.4 0 1
+SetArgument self_illum_intensity 5
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\tens_yellow.shader
+SetArgument self_illum_color 1 0.4 0 1
+SetArgument self_illum_intensity 5
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\compass_yellow.shader
+SetArgument self_illum_color 1 0.4 0 1
+SetArgument self_illum_intensity 5
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_yellow.shader
+SetArgument albedo_color 5 1.5 0 1
+SetArgument self_illum_color 1 0.5 0 1
+savetagchanges
+exit
+
+EditTag custom\weapons\hce\tgof_hce_assault_rifle\shaders\display_clear_yellow.shader
+SetArgument self_illum_color 1 0.4 0 1
+SetArgument self_illum_intensity 5
+savetagchanges
+exit

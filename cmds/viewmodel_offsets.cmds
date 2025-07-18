@@ -52,7 +52,7 @@ SetField CenteredFirstPersonWeaponOffset 0.047 -0.001 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\tgof_hce_assault_rifle\gold_variant\gold_ar.weapon
+EditTag objects\weapons\rifle\assault_rifle_power\assault_rifle_power.weapon
 SetField WeaponTypeName OFFSET_HCE_AR_GOLD
 SetField CenteredFirstPersonWeaponOffset 0.047 -0.001 0
 SaveTagChanges
@@ -64,7 +64,7 @@ SetField CenteredFirstPersonWeaponOffset 0.048 0 0
 SaveTagChanges
 Exit
 
-EditTag custom\weapons\hce\tgof_hce_magnum\gold_variant\gold_magnum.weapon
+EditTag objects\weapons\pistol\magnum\magnum_power.weapon
 SetField WeaponTypeName OFFSET_HCE_MAGNUM_GOLD
 SetField CenteredFirstPersonWeaponOffset 0.048 0 0
 SaveTagChanges
