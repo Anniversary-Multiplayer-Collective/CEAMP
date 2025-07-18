@@ -523,7 +523,12 @@ SetField SecondaryWeaponFlags None
 savetagchanges
 exit
 
+echo fix BR ballistics
 
+edittag ui\chud\battle_rifle.chud_definition
+SetField HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.5 0.5
+savetagchanges
+exit
 
 
 
