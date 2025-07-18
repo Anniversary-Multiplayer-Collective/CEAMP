@@ -839,6 +839,17 @@ SetArgument environment_map_specular_contribution 0.75
 savetagchanges
 exit
 
+Echo flashlight touchup
+
+EditTag objects\characters\masterchief\flashlight_1p.light
+SetField Flags AllowShadowsAndGels,ShadowCasting,RenderFirstPersonOnly,MoveToCameraInFirstPerson,NeverPriorityCull
+SetField DistanceDiffusion 0.5
+SetField AngularSmoothness 0
+SetField MaximumDistance 9
+SetField FrustumNearWidth 0.2
+savetagchanges
+exit
+
 
 RunCommands "workingdir\cmds\weaponglobals.cmds"
 
