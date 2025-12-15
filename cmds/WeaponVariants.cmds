@@ -548,35 +548,304 @@ exit
 
 
 	echo DMR
+	
+	
+	
 
-duplicatetag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle.model
-nametag * custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_beta
-duplicatetag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model
-nametag * custom\weapons\other\tgof_h2_battle_rifle\fp\fp_beta
+
+duplicatetag custom\weapons\other\tgof_h2_battle_rifle\fp\fp.render_model objects\weapons\rifle\dmr\dmr_h2_fp
+duplicatetag objects\weapons\rifle\battle_rifle\battle_rifle.render_model objects\weapons\rifle\dmr\dmr_h2
+duplicatetag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader objects\temp\zekken\weapons\battle_rifle\shaders\dmr_lens
+
+EditTag objects\weapons\rifle\dmr\dmr.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_h2.render_model
+Savetagchanges
+Exit
+
+EditTag objects\weapons\rifle\dmr\dmr.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+SetField FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+SetField FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_battle_rifle\fp_battle_rifle.model_animation_graph
+SetField FirstPerson[1].FirstPersonModel objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+SetField FirstPerson[1].FirstPersonAnimations objects\characters\dervish\fp\weapons\rifle\fp_battle_rifle\fp_battle_rifle.model_animation_graph
+Savetagchanges
+Exit
+
+edittag objects\temp\zekken\weapons\battle_rifle\shaders\dmr_lens.shader
+Savetagchanges
+exit
+
+Edittag objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+replacerendergeometry "workingdir\models\dmr.fbx" trianglelist
+setfield Materials[1].RenderMethod objects\temp\zekken\weapons\battle_rifle\shaders\dmr_lens.shader
+Savetagchanges
+Exit
+
+Edittag objects\weapons\rifle\dmr\dmr_h2.render_model
+replacerendergeometry "workingdir\models\dmr.fbx" trianglelist
+setfield Materials[0].RenderMethod custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_metal.shader
+setfield Materials[1].RenderMethod objects\temp\zekken\weapons\battle_rifle\shaders\dmr_lens.shader
+Savetagchanges
+Exit
+
+Edittag objects\weapons\rifle\dmr\dmr_h2.render_model
+Savetagchanges
+exit
+
+
+echo green 
+
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_green
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_green.shader
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_green
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_lens_new_green
 savetagnames
 
-
-edittag objects\weapons\rifle\dmr\dmr.weapon
-SetField Model custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_beta.model
-SetField FirstPerson[0].FirstPersonModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_beta.mode
-SetField FirstPerson[0].FirstPersonAnimations custom\weapons\other\tgof_h2_battle_rifle\fp\fp.model_animation_graph
+EditTag objects\weapons\rifle\dmr_accuracy\dmr_accuracy.weapon
 SetField HudInterface ui\chud\battle_rifle.chud_definition
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green.render_model
+setfield FirstPerson[1].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green.render_model
 savetagchanges
 exit
 
-EditTag custom\weapons\other\tgof_h2_battle_rifle\battle_rifle_beta.model
-setfield RenderModel custom\weapons\other\tgof_h2_battle_rifle\fp\fp_beta.mode
+EditTag objects\weapons\rifle\dmr_accuracy\dmr_accuracy.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_green.render_model
 savetagchanges
 exit
 
-edittag custom\weapons\other\tgof_h2_battle_rifle\fp\fp_beta.mode
-SetField Materials[5].RenderMethod null
-SetField Materials[6].RenderMethod null
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_green.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_green.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_green.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_green.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new_green.shader
 savetagchanges
 exit
 
 
- 
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_green.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_green.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_green.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_green.shader
+savetagchanges
+exit
+
+
+
+
+echo blue 
+
+
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_blue
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_blue.shader
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_blue
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_ammo\dmr_ammo.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue.render_model
+setfield FirstPerson[1].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_ammo\dmr_ammo.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_blue.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_blue.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_blue.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_blue.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_blue.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue.shader
+savetagchanges
+exit
+
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_blue.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_blue.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue.shader
+savetagchanges
+exit
+
+echo yellow 
+
+
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_yellow
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_yellow.shader
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_yellow
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_rof\dmr_rof.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow.render_model
+setfield FirstPerson[1].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_rof\dmr_rof.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_yellow.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_yellow.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_yellow.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_yellow.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow.shader
+savetagchanges
+exit
+
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_yellow.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_yellow.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow.shader
+savetagchanges
+exit
+
+echo ##red
+
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_red
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_red
+DuplicateTag custom\weapons\other\tgof_h2_battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_red
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_damage\dmr_damage.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+setfield FirstPerson[1].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_damage\dmr_damage.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_red.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_red.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_red.dds
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_red.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_red.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+replacerendergeometry workingdir\models\dmr_red.fbx
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_red.render_model
+replacerendergeometry workingdir\models\dmr_red.fbx
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\bitmaps\dmr_red.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\bitmaps\dmr_red.shader
+savetagchanges
+exit
+
+
+echo ##gold
+
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_gold
+DuplicateTag objects\weapons\rifle\dmr\dmr_h2_fp.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_power\dmr_power.weapon
+SetField HudInterface ui\chud\battle_rifle.chud_definition
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold.render_model
+setfield FirstPerson[1].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_power\dmr_power.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_gold.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_gold.shader
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+
+
+
 
 
 
