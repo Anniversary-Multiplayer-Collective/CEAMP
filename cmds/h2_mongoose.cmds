@@ -1,0 +1,145 @@
+opencachefile "h3maps\riverworld.map"
+porttag replace objects\vehicles\mongoose\mongoose.vehicle
+Exit
+
+duplicatetag objects\vehicles\warthog\shaders\exterior.shader
+nametag * objects\vehicles\mongoose\shaders\mongoose_hull_shiny
+
+duplicatetag objects\vehicles\warthog\shaders\exterior.shader
+nametag * objects\vehicles\mongoose\shaders\anniversary_mongoose_hull
+
+duplicatetag ms30\objects\vehicles\mauler\shaders\mauler_illum.shader
+nametag * objects\vehicles\mongoose\shaders\lights
+
+duplicatetag objects\weapons\rifle\smg\shaders\smg_rubber.shader
+nametag * objects\vehicles\mongoose\shaders\rubber
+
+createtag bitm
+nametag * objects\vehicles\mongoose\bitmaps\mongoose_illum
+createtag bitm
+nametag * objects\vehicles\mongoose\bitmaps\mongoose_rubber_specular_mask_map
+
+edittag objects\vehicles\mongoose\bitmaps\mongoose.bitm
+importbitmap 0 workingdir\bitmaps\mongoose\mongoose_dif.dds
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\bitmaps\mongoose_illum.bitm
+importbitmap 0 workingdir\bitmaps\mongoose\mongoose_illum.dds
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
+importbitmap 0 workingdir\bitmaps\mongoose\mongoose_bump.dds
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\bitmaps\mongoose_rubber_specular_mask_map.bitm
+importbitmap 0 workingdir\bitmaps\mongoose\mongoose_rubber_specular_mask_map.dds
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\bitmaps\wheels.bitm
+importbitmap 0 workingdir\bitmaps\mongoose\mongoose_wheel.dds
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\bitmaps\wheels_bump.bitm
+importbitmap 0 workingdir\bitmaps\mongoose\mongoose_wheel_bump.dds
+savetagchanges
+exit
+
+generatebitmap objects\vehicles\mongoose\bitmaps\mongoose_cc workingdir\bitmaps\mongoose\mongoose_cc.dds
+
+edittag objects\vehicles\mongoose\shaders\mongoose_hull_shiny.rmsh
+setbitmap base_map objects\vehicles\mongoose\bitmaps\mongoose.bitm
+setbitmap bump_map objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
+setargument specular_coefficient 1 1 1 1
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\shaders\anniversary_mongoose_hull.rmsh
+setbitmap base_map objects\vehicles\mongoose\bitmaps\mongoose.bitm
+setbitmap bump_map objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\shaders\lights.rmsh
+setfield shaderproperties[0].textureconstants[0].bitmap objects\vehicles\mongoose\bitmaps\mongoose_illum.bitm
+setfield shaderproperties[0].functions[0].function.data 08340000000000000000F0400000000000000000000000000000000014000000010000000400003FFFFF7F7F0000804F00000000
+setargument self_illum_color 0.75 0.75 0.75 1
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\shaders\rubber.rmsh
+setfield shaderproperties[0].textureconstants[0].bitmap objects\vehicles\mongoose\bitmaps\mongoose.bitm
+setfield shaderproperties[0].textureconstants[2].bitmap objects\vehicles\mongoose\bitmaps\mongoose_bump.bitm
+setfield shaderproperties[0].textureconstants[4].bitmap objects\vehicles\mongoose\bitmaps\mongoose_rubber_specular_mask_map.bitm
+setfield shaderproperties[0].textureconstants[6].bitmap shaders\default_bitmaps\bitmaps\color_black.bitm
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\mongoose.mode
+replacerendergeometry "workingdir\models\h2_mongoose.dae"
+setfield materials[0].rendermethod objects\vehicles\mongoose\shaders\mongoose_wheel.shader
+setfield materials[1].rendermethod objects\vehicles\mongoose\shaders\mongoose_hull_shiny.shader
+setfield materials[2].rendermethod objects\vehicles\mongoose\shaders\anniversary_mongoose_hull.shader
+setfield materials[3].rendermethod objects\vehicles\mongoose\shaders\lights.shader
+setfield materials[4].rendermethod objects\vehicles\mongoose\shaders\rubber.shader
+setfield materials[5].rendermethod objects\vehicles\mongoose\shaders\mongoose_glass.shader
+setfield materials[6].rendermethod objects\vehicles\mongoose\shaders\mongoose_blur.shader
+setfield markergroups[3].markers[0].translation -0.14 0 -0.014
+setfield markergroups[42].markers[0].translation -0.09 0.1112247 -0.24
+setfield markergroups[42].markers[0].rotation 6.429E-07 -0.2502072 -3.206E-07 -0.9366723
+setfield markergroups[43].markers[0].nodeindex 0
+setfield markergroups[43].markers[0].translation 0.22 0.1084592 0
+setfield markergroups[43].markers[0].rotation 0 -0.2290483 0.09445696 -0.8138382
+setfield markergroups[62].markers[0].translation -0.09 -0.1112247 -0.24
+setfield markergroups[62].markers[0].rotation 6.429E-07 -0.2502072 -3.206E-07 -0.9366723
+setfield markergroups[63].markers[0].nodeindex 0
+setfield markergroups[63].markers[0].translation 0.22 -0.1084592 0
+setfield markergroups[63].markers[0].rotation 0 -0.2290483 0.09445696 -0.8138382
+savetagchanges
+exit
+
+edittag objects\characters\masterchief\masterchief.jmad
+setfield modes[50].modeik[0].attachtomarker right_hand
+setfield modes[50].modeik[1].attachtomarker left_hand
+savetagchanges
+exit
+
+foreach vehi named: \mongoose\ addblockelements changecolors
+foreach vehi named: \mongoose\ addblockelements changecolors[0].initialpermutations
+foreach vehi named: \mongoose\ setfield changecolors[0].initialpermutations[0].weight 1
+foreach vehi named: \mongoose\ setfield changecolors[0].initialpermutations[0].colorlowerbound 0.4588 0.5333 0.3020
+foreach vehi named: \mongoose\ setfield changecolors[0].initialpermutations[0].colorupperbound 0.4588 0.5333 0.3020
+foreach rmsh named: \mongoose\ setargument change_color_map 1 1 0 0
+
+
+edittag objects\vehicles\mongoose\mongoose.mode
+replacerendergeometry "workingdir\models\h2_mongoose.dae" trianglelist
+SetField MarkerGroups[14].Markers[0].Translation 0.3 0.09 0.04
+SetField MarkerGroups[14].Markers[1].Translation 0.3 -0.09 0.04
+SetField MarkerGroups[23].Markers[0].Translation 0.31 0.11500018 0.052012403
+SetField MarkerGroups[23].Markers[1].Translation 0.31 -0.114999816 0.05201243
+setfield markergroups[3].markers[0].translation -0.14 0 -0.014
+setfield markergroups[42].markers[0].translation -0.09 0.1112247 -0.24
+setfield markergroups[42].markers[0].rotation 6.429E-07 -0.2502072 -3.206E-07 -0.9366723
+setfield markergroups[43].markers[0].nodeindex 0
+setfield markergroups[43].markers[0].translation 0.22 0.1084592 0
+setfield markergroups[43].markers[0].rotation 0 -0.2290483 0.09445696 -0.8138382
+setfield markergroups[62].markers[0].translation -0.09 -0.1112247 -0.24
+setfield markergroups[62].markers[0].rotation 6.429E-07 -0.2502072 -3.206E-07 -0.9366723
+setfield markergroups[63].markers[0].nodeindex 0
+setfield markergroups[63].markers[0].translation 0.22 -0.1084592 0
+setfield markergroups[63].markers[0].rotation 0 -0.2290483 0.09445696 -0.8138382
+savetagchanges
+exit
+
+
+edittag objects\characters\masterchief\masterchief.jmad
+setfield modes[50].modeik[0].attachtomarker right_hand
+setfield modes[50].modeik[1].attachtomarker left_hand
+savetagchanges
+exit
+

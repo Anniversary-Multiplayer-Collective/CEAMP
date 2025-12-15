@@ -1,4 +1,5 @@
 D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+SetVariable h3maps "E:\Halo Resources\Halo3"
 SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\CEAMP"
 SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
 SetVariable workshop "D:\Games\steamapps\workshop\content\976730\2962955878"
@@ -860,6 +861,8 @@ RunCommands "workingdir\cmds\sprintanimations.cmds"
 RunCommands "workingdir\cmds\ForgePalette.cmds"
 
 RunCommands "workingdir\cmds\WeaponVariants.cmds"
+
+RunCommands "workingdir\cmds\h2_mongoose.cmds"
 
 # echo ==Make WaterGravityScale and WaterDamageRange the same as the AirGravityScale and AirDamageRange for every projectile to combat a BUG Fixes weapon drop and more...==
 cs < "workingdir\WeaponWaterFix.cs"
