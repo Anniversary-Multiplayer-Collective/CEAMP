@@ -783,6 +783,31 @@ OpenModPackage "workingdir\paks\HCECustomization.pak"
 ApplyModPackage
 ExitModPackage
 
+# echo fix shaders
+
+Duplicatetag objects\characters\masterchief\shaders\mp_masterchief.shader custom\characters\tgof_hce_chief_new\shaders\armor_fixed
+
+Edittag custom\characters\tgof_hce_chief_new\shaders\armor_fixed.shader
+SetField ShaderProperties[0].TextureConstants[0].Bitmap custom\characters\tgof_hce_chief_new\bitmaps\pbr\cyborg_diffuse.bitmap
+SetField ShaderProperties[0].TextureConstants[2].Bitmap custom\characters\hce_chief\bitmaps\t_cyborg_mp_cc.bitmap
+SetField ShaderProperties[0].TextureConstants[3].Bitmap custom\characters\tgof_hce_chief_new\bitmaps\pbr\cyborg_zbump.bitmap
+SetField ShaderProperties[0].TextureConstants[7].Bitmap shaders\default_bitmaps\bitmaps\color_black.bitmap
+SetArgument diffuse_coefficient 1.5
+SetArgument fresnel_color 0.32483464 0.34982187 0.41541353
+SetArgument specular_coefficient 0.25
+SaveTagChanges
+Exit
+
+EditTag custom\characters\tgof_hce_chief_new\tgof_hce_chief_new.render_model
+SetField Materials[0].RenderMethod custom\characters\tgof_hce_chief_new\shaders\armor_fixed.shader
+savetagchanges
+exit
+
+EditTag custom\characters\tgof_hce_chief_new\fp_body\fp_body.render_model
+SetField Materials[1].RenderMethod custom\characters\tgof_hce_chief_new\shaders\armor_fixed.shader
+savetagchanges
+exit
+
 # echo color change visor
 Edittag objects\characters\masterchief\shaders\mp_visor.shader
 SetArgument bump_map 0.5 0.5 0 0
@@ -815,7 +840,6 @@ EditTag custom\characters\tgof_hce_chief_new\tgof_hce_chief_new.render_model
 SetField Materials[1].RenderMethod custom\characters\tgof_hce_chief_new\shaders\light_shield_cc.shader
 savetagchanges
 exit
-
 
 # echo == Change weapons to CE in customization...==
 EditTag levels\ui\mainmenu\mainmenu.scenario
