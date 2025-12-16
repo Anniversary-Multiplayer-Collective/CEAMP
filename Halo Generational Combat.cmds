@@ -799,6 +799,23 @@ SetField Materials[5].RenderMethod objects\characters\masterchief\shaders\mp_vis
 savetagchanges
 exit
 
+# echo color change lights
+
+Duplicatetag objects\characters\masterchief\shaders\mp_masterchief.shader custom\characters\tgof_hce_chief_new\shaders\light_shield_cc
+
+edittag custom\characters\tgof_hce_chief_new\shaders\light_shield_cc.shader
+SetField ShaderProperties[0].TextureConstants[0].Bitmap custom\characters\hce_chief\bitmaps\cyborg.bitmap
+SetField ShaderProperties[0].TextureConstants[2].Bitmap shaders\default_bitmaps\bitmaps\color_black.bitmap
+SetField ShaderProperties[0].TextureConstants[3].Bitmap custom\characters\hce_chief\bitmaps\cyborg.bitmap
+SetField ShaderProperties[0].TextureConstants[7].Bitmap custom\characters\tgof_hce_chief_new\bitmaps\mkv_shield.bitmap
+Savetagchanges
+Exit
+
+EditTag custom\characters\tgof_hce_chief_new\tgof_hce_chief_new.render_model
+SetField Materials[1].RenderMethod custom\characters\tgof_hce_chief_new\shaders\light_shield_cc.shader
+savetagchanges
+exit
+
 
 # echo == Change weapons to CE in customization...==
 EditTag levels\ui\mainmenu\mainmenu.scenario
