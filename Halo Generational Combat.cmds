@@ -785,9 +785,9 @@ ExitModPackage
 
 # echo color change visor
 Edittag objects\characters\masterchief\shaders\mp_visor.shader
-SetArgument bump_map transform 0.5 0.5 0 0
-SetArgument detail_map transform 0.5 0.5 0 0
-SetArgument base_map transform 0.5 0.5 0 0
+SetArgument bump_map 0.5 0.5 0 0
+SetArgument detail_map 0.5 0.5 0 0
+SetArgument base_map 0.5 0.5 0 0
 SetArgument diffuse_coefficient 5
 SetArgument specular_coefficient 10
 SaveTagChanges
