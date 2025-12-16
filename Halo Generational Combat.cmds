@@ -6,7 +6,7 @@ SetVariable workshop "D:\Games\steamapps\workshop\content\976730\2962955878"
 
 # echo ==Creating Mod Package...==
 CreateModPackage 1 large
-Halo Combat Evolved Advanced Multiplayer
+Combat Evolved Advanced Multiplayer
 This is a mod that ports all of Halo: Combat Evolved into Eldewrito, with the goal of keeping true to the original as much as possible whilst updating visuals & gameplay mechanics to fit a perfect balance between old and new, such as CE vehicles being able to be destroyed & having damage states, and modified halo 3 equipment thrown into the Halo: Combat Evolved sandbox.
 AMP Collective, Drksteel
 0.1
@@ -782,6 +782,23 @@ RunCommands "workingdir\cmds\main_menu.cmds"
 OpenModPackage "workingdir\paks\HCECustomization.pak"
 ApplyModPackage
 ExitModPackage
+
+# echo color change visor
+Edittag objects\characters\masterchief\shaders\mp_visor.shader
+SetArgument bump_map transform 0.5 0.5 0 0
+SetArgument detail_map transform 0.5 0.5 0 0
+SetArgument base_map transform 0.5 0.5 0 0
+SetArgument diffuse_coefficient 5
+SetArgument specular_coefficient 10
+SaveTagChanges
+exit
+
+EditTag custom\characters\tgof_hce_chief_new\tgof_hce_chief_new.render_model
+SetField Materials[4].RenderMethod objects\characters\masterchief\shaders\mp_visor.shader
+SetField Materials[5].RenderMethod objects\characters\masterchief\shaders\mp_visor.shader
+savetagchanges
+exit
+
 
 # echo == Change weapons to CE in customization...==
 EditTag levels\ui\mainmenu\mainmenu.scenario
