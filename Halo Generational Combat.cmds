@@ -848,6 +848,12 @@ SetField WeaponPalette[1].Object objects\weapons\rifle\plasma_rifle\plasma_rifle
 SaveTagChanges
 Exit
 
+# echo secondary colors
+
+Edittag custom\characters\hce_chief\bitmaps\t_cyborg_mp_cc.bitmap
+importbitmap 0 "workingdir\bitmaps\cyborg\t_cyborg_mp_cc.dds"
+Exit
+
 OpenModPackage "workingdir\paks\1999_Emotes v1_5 CUSTOM.pak"
 ApplyModPackage
 ExitModPackage
